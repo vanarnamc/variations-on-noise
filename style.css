@@ -1,0 +1,92 @@
+
+@font-face {
+    font-family: 'Monument-Bold';
+    src: url(fonts/ABCMonumentGrotesk-Bold-Trial.otf);
+}
+@font-face {
+    font-family: 'Doted';
+    src: url(fonts/S4QUFX.otf);
+}
+body.inverted {
+    filter: invert(1);
+    background-color: black;
+  }
+  
+body {
+    margin: 0;
+    overflow: hidden; /* Hide overflow to prevent scrolling and hide circles that overflow */
+    height: 100vh; /* Set the body height to the full viewport height */
+    display: flex;
+    align-items: center;
+}
+
+  
+
+#main-container {
+    position: relative; /* Needed for absolute positioning */
+    justify-content: flex-end;
+    display: flex;
+    flex-wrap: wrap; /* Allow multiple lines */
+    align-items: flex-start; /* Align items to the start of the cross axis */
+    height: 100%; /* Full height */
+    width: 100vw; /* Adjust the width as needed */
+}
+.name {
+    display:flex;
+    height: calc(100vh - 30px); /* Reduce height to accommodate margin */
+    width: 25vw;
+    flex-direction: column ;
+    justify-content: end;
+    margin-right: auto;
+    margin-left: 12vw;
+    font-family: 'Monument-Bold';
+    line-height: 1.2;
+    
+}
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0; /* Add margin to top and bottom */
+    height: calc(100vh - 20px); /* Reduce height to accommodate margin */
+    width: 10vw;
+    font-family: "Monument-Bold";
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+}
+.name {
+    display:flex;
+    height: calc(100vh - 30px); /* Reduce height to accommodate margin */
+    width: 40vw;
+    flex-direction: column ;
+    justify-content: end;
+    margin-left: 10px;
+    font-family: "Monument-Bold";
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+
+}
+
+.text-cycle {
+    position: fixed; /* Fixed position relative to the viewport */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center the text */
+    font-family: 'Doted'; /* Use the custom font, with a fallback */
+    font-size: 20vw; /* Large text size */
+    color: black; /* Text color */
+    text-align: center; /* Center text alignment */
+    z-index: 10; /* Ensure it's above other elements */
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  .word {
+    display: none; /* Hide all words by default */
+    width: auto;
+  }
+  
+  .word.visible {
+    display: inline; /* Only display the current word */
+  }
