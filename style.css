@@ -51,19 +51,6 @@ body {
     width: 100vw; /* Adjust the width as needed */
     
 }
-.name {
-    display:flex;
-    height: calc(100vh - 30px); /* Reduce height to accommodate margin */
-    width: 25vw;
-    flex-direction: column ;
-    justify-content: end;
-    margin-right: auto;
-    margin-left: 12vw;
-    font-family: 'Monument-Bold';
-    line-height: 1.2;
-
-    
-}
 .projects {
     display: flex;
     flex-direction: column;
@@ -83,18 +70,6 @@ body {
     
 }
 
-.name {
-    display:flex;
-    height: calc(100vh - 30px); /* Reduce height to accommodate margin */
-    width: 40vw;
-    flex-direction: column ;
-    justify-content: end;
-    margin-left: 10px;
-    font-family: "Monument-Bold";
-    line-height: 1.2;
-    color: hsb(0, 0%, 80%);
-
-}
 
 .text-cycle {
     position: fixed; /* Fixed position relative to the viewport */
@@ -109,7 +84,6 @@ body {
     color: hsb(0, 0%, 80%);
     
   }
-  
   .word {
     display: none; /* Hide all words by default */
     width: auto;
@@ -121,5 +95,10 @@ body {
   @media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
+    }
+
+    .projects{
+        margin: 40px 0; /* Add margin to top and bottom */
+        height: calc(100vh - 80px); /* Reduce height to accommodate margin */
     }
   }
