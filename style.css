@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: 'Monument-Bold';
-    src: url(fonts/ABCMonumentGrotesk-Bold-Trial.otf);
+    src: url(fonts/ABCMonumentGrotesk-Heavy-Trial.otf);
 }
 @font-face {
     font-family: 'Doted';
@@ -30,6 +30,7 @@ body {
     align-items: flex-start; /* Align items to the start of the cross axis */
     height: 100%; /* Full height */
     width: 100vw; /* Adjust the width as needed */
+    
 }
 .name {
     display:flex;
@@ -41,22 +42,29 @@ body {
     margin-left: 12vw;
     font-family: 'Monument-Bold';
     line-height: 1.2;
+
     
 }
 .projects {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 40px 0; /* Add margin to top and bottom */
+    font-size: .9vw; /* Large text size */
+
+    margin: 20px 0; /* Add margin to top and bottom */
     height: calc(100vh - 40px); /* Reduce height to accommodate margin */
     width: 100vw;
     font-family: "Monument-Bold";
     line-height: 1.2;
-    color: rgb(0, 0, 0);
+    color: hsb(0, 0%, 80%);
     margin-left: 10px;
     text-align: center; 
     align-items: center;
+    line-height: 1.3;
+    margin-left: 30px;
+    
 }
+
 .name {
     display:flex;
     height: calc(100vh - 30px); /* Reduce height to accommodate margin */
@@ -66,7 +74,7 @@ body {
     margin-left: 10px;
     font-family: "Monument-Bold";
     line-height: 1.2;
-    color: rgb(0, 0, 0);
+    color: hsb(0, 0%, 80%);
 
 }
 
@@ -80,7 +88,7 @@ body {
     color: black; /* Text color */
     text-align: center; /* Center text alignment */
     z-index: 10; /* Ensure it's above other elements */
-    color: rgb(0, 0, 0);
+    color: hsb(0, 0%, 80%);
     
   }
   

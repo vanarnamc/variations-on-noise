@@ -21,5 +21,5 @@ document.addEventListener("DOMContentLoaded", function() {
     words[currentWord].classList.add('visible');
     
     // Set an interval for how often to cycle words (and invert colors)
-    setInterval(cycleWords, 400); // Change word every 2 seconds
+    setInterval(cycleWords, 550); // Change word every 2 seconds
   });
