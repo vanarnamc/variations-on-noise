@@ -37,6 +37,8 @@ body {
     align-items: center;
     color: black; /* Default text color */
     background-color: rgb(240, 240, 240); /* Default background color */
+    padding-bottom: env(safe-area-inset-bottom); /* Add this line */
+
 }
 
   
@@ -98,6 +100,6 @@ body {
 
     .projects{
         margin: 40px 0; /* Add margin to top and bottom */
-        height: calc(100vh - 80px); /* Reduce height to accommodate margin */
+        height: calc(100vh - 80px - env(safe-area-inset-bottom)); /* Adjust this line */
     }
   }
