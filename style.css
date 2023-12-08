@@ -99,7 +99,7 @@ body {
     }
 
     .projects{
-        margin: 80px 0; /* Add margin to top and bottom */
-        height: calc(100vh - 160px - env(safe-area-inset-bottom)); /* Adjust this line */
+        margin: 100px 0; /* Add margin to top and bottom */
+        height: calc(100vh - 200px - env(safe-area-inset-bottom)); /* Adjust this line */
     }
   }
