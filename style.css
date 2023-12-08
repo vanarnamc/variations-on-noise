@@ -7,10 +7,27 @@
     font-family: 'Doted';
     src: url(fonts/S4QUFX.otf);
 }
-body.inverted {
-    filter: invert(1);
+a{
+    text-decoration: none;
+    color: black; /* Default color for links */
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+body.inverted{
     background-color: black;
-  }
+    color:rgb(240, 240, 240)
+}
+/* Inverted state for links */
+body.inverted a {
+    color: rgb(240, 240, 240); /* Light gray color for links in inverted state */
+}
+
+body.inverted .text-cycle {
+    color: rgb(240, 240, 240); /* Light gray color for text in inverted state */
+}
   
 body {
     margin: 0;
@@ -18,6 +35,8 @@ body {
     height: 100vh; /* Set the body height to the full viewport height */
     display: flex;
     align-items: center;
+    color: black; /* Default text color */
+    background-color: rgb(240, 240, 240); /* Default background color */
 }
 
   
@@ -98,4 +117,9 @@ body {
   
   .word.visible {
     display: inline; /* Only display the current word */
+  }
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
   }
