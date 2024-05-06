@@ -1,44 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" 
-    type="image/png" 
-    href="media/favicon.png">
-        <title>Variations on Noise - Thesis</title>
-    
-    </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Video Example</title>
+<style>
+    @font-face {
+        font-family: 'ABCROM Heavy';
+        src: url('fonts/ABCROM-Heavy-Trial.otf');
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+        height: 100vh;
+        overflow: hidden;
+    }
+    a {
+    text-decoration: none;
+    color: inherit;
+}
+    .video-background {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Full height */
+        overflow: hidden;
+    }
+    .video-background iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; /* Disable mouse interaction */
+    }
+    .menu-bar {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding-left: 5px;
+        padding-right: 5px;
+        box-sizing: border-box; /* Add this line */
+
+
+      
+    }
+    .menu-left, .menu-right {
+        display: flex;
+        gap: 20px;
+    }
+    .menu-item {
+        font-family: 'ABCROM Heavy', sans-serif;
+        font-size: 12px;
+        color: #4376BB;
+        letter-spacing: 1.3px;
+        cursor: pointer;
+        position: relative;
+    }
+    .menu-item:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 1.5px;
+        background-color: #4376BB;
+        width: 100%;
+    }
+    #muteText {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        cursor: pointer;
+        z-index: 100; /* Ensure text is clickable and visible */
+        font-family: 'ABCROM Heavy', sans-serif;
+        color: white;
+        letter-spacing: 1.3px;
+
+        font-size: 12px;
+    }
+    #muteText:hover::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -1px;
+        height: 1.5px;
+        background-color: white;
+        width: 100%;
+    }
+</style>
+</head>
 <body>
-    <div id="main-container">
-
-        <!-- <div class="name">
-       
-        </div> -->
-    <div class="projects">
-        <div>
-            Clinton Van Arnam<br>      
-            Thesis Review — 12.09.2023<br>
-        </div>
-        <div>
-            <a href="http://inourti.me" target="_blank">inourti.me ↗</a><br>
-            <a href="http://noiseutopiaindex.com" target="_blank">Noise Utopia Index ↗</a><br>
-            <a href="https://vimeo.com/user130788084/hypermedia?share=copy" target="_blank">HYPERMEDIA ↗</a><br>
-            <a href="https://vanarnamc.github.io/cybernetics-sound/" target="_blank">Machines of Loving Grace ↗</a><br>
-            <a href="http://designfordreaming.com" target="_blank">Design for Dreaming ↗</a><br>           
-            <a href="https://vanarnamc.github.io/text-sequencer/" target="_blank">Notes on the Mechanical Eye ↗</a><br>
+<div id="muteText" onclick="toggleMute()">[UNMUTE]</div>
+<div class="video-background">
+    <iframe src="https://player.vimeo.com/video/943062696?background=1&autoplay=1&loop=1&mute=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>
+<div class="menu-bar">
+    <div class="menu-left">
+        <div class="menu-item">VARIATIONS ON NOISE</div>
     </div>
-      </div>
-
-  
-
-
-<div class="text-cycle">
-    <span class="word">Variations</span>
-    <span class="word">On</span>
-    <span class="word">Noise</span>
-  </div>
-
-<script src="script.js"></script></body>
+    <div class="menu-right">
+        <div class="menu-item"><a href="about.html">ABOUT</a></div>
+        <div class="menu-item"><a href="interviews.html">INTERVIEWS</a></div>
+        <div class="menu-item"><a href="noise_index.html">NOISE INDEX</a></div>
+    </div>
+</div>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script> 
+    var iframe = document.querySelector('.video-background iframe');
+    var player = new Vimeo.Player(iframe);
+    var muteText = document.getElementById('muteText');
+    function toggleMute() {
+        player.getVolume().then(function(volume) {
+            if (volume > 0) {
+                player.setVolume(0);
+                muteText.textContent = '[UNMUTE]';
+            } else {
+                player.setVolume(1);
+                muteText.textContent = '[MUTE]';
+            }
+        });
+    }
+</script>
+</body>
 </html>
