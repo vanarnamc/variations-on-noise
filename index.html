@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Background Video Example</title>
+<title>VARIATIONS ON NOISE</title>
 <style>
     @font-face {
         font-family: 'ABCROM Heavy';
@@ -36,15 +36,17 @@
     }
     .menu-bar {
         position: absolute;
-        bottom: 5px;
+        bottom: 10px;
+        color: #4376BB;
+
         left: 0;
         width: 100%;
         height: 50px;
         display: flex;
         justify-content: space-between;
         align-items: end;
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
         box-sizing: border-box; /* Add this line */
 
 
@@ -54,10 +56,12 @@
         display: flex;
         gap: 20px;
     }
+    .menu-left{
+        color: white;
+    }
     .menu-item {
         font-family: 'ABCROM Heavy', sans-serif;
         font-size: 12px;
-        color: #4376BB;
         letter-spacing: 1.3px;
         cursor: pointer;
         position: relative;
@@ -74,12 +78,12 @@
     }
     #muteText {
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 10px;
+        right: 10px;
         cursor: pointer;
         z-index: 100; /* Ensure text is clickable and visible */
         font-family: 'ABCROM Heavy', sans-serif;
-        color: white;
+        color: #4376BB;
         letter-spacing: 1.3px;
 
         font-size: 12px;
@@ -91,13 +95,46 @@
         right: 0;
         bottom: -1px;
         height: 1.5px;
-        background-color: white;
+        background-color: #4376BB;
         width: 100%;
     }
+    #mobileMenu {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+        z-index: 100;
+        font-family: 'ABCROM Heavy', sans-serif;
+        color: #4376BB;
+        letter-spacing: 1.3px;
+        font-size: 12px;
+    }
+    /* Media query for small screens */
+    @media (max-width: 600px) {
+        /* Hide menu-right */
+        .menu-right {
+            display: none;
+        }
+
+        /* Show mobile menu text */
+        #mobileMenu {
+            display: block;
+        }
+
+        /* Move muteText to the top left */
+        #muteText {
+            right: auto;
+            left: 10px;
+        }
+    }
+
 </style>
 </head>
 <body>
 <div id="muteText" onclick="toggleMute()">[UNMUTE]</div>
+<div id="mobileMenu">MENU</div>
+
 <div class="video-background">
     <iframe src="https://player.vimeo.com/video/943062696?background=1&autoplay=1&loop=1&mute=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 </div>
