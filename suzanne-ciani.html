@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUZANNE CIANI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="menuOverlay">
+      <div id="closeButton" onclick="toggleMenu()">X</div>
+      <div class="menu-item"><a href="about.html">ABOUT</a></div>
+      <div class="menu-item"><a href="noise_index.html">NOISE INDEX</a></div>
+      <div class="menu-item">
+        <a href="#" onclick="toggleSubmenu(event)">INTERVIEWS</a>
+        <span id="arrow" style="display: inline-block; margin-left: -8px"
+          >&lt;</span
+        >
+        <div id="submenu" style="display: none">
+          <div><a href="interview1.html">SUZANNE CIANI</a></div>
+          <div><a href="interview2.html">KEVIN MCCAUGHEY</a></div>
+          <div><a href="interview3.html">MITCH PAONE</a></div>
+          <div><a href="interview4.html">HASSAN RAHIM</a></div>
+          <div><a href="interview5.html">LAUREL SCHWULST</a></div>
+          <div><a href="interview6.html">LOBSANG YONTEN</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="mobileMenu" onclick="toggleMenu()">MENU</div>
+
+    <div class="video-background">
+      <iframe
+        src="https://player.vimeo.com/video/943062696?background=1&autoplay=1&loop=1&mute=1"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="menu-bar">
+      <div class="menu-left">
+        <div class="menu-item">VARIATIONS ON NOISE</div>
+      </div>
+      <div class="menu-right">
+        <div class="menu-item"><a href="about.html">ABOUT</a></div>
+        <div class="menu-item"><a href="interviews.html">INTERVIEWS</a></div>
+        <div class="menu-item"><a href="noise_index.html">NOISE INDEX</a></div>
+      </div>
+    </div>
+
+    <div class="interview-headline">
+      <div id="name">
+        <div>SUZANNE</div>
+        <div>CIANI</div>
+      </div>
+      <div id="sub-headline">
+        <div>FREEDOM</div>
+        <div>LOVE</div>
+        <div>PERFECTION</div>
+      </div>
+    </div>
+
+    <div class="interview-text">
+      <!-- intro  -->
+      <div class="interview-speaker">
+        <div class="interview-speaker-text-second">
+          <div>
+            Suzanne Ciani is a five-time Grammy award-nominated composer,
+            electronic music pioneer, and neo-classical recording artist who has
+            released over twenty solo albums including
+            <span class="italic-text">Seven Waves</span>, and
+            <span class="italic-text">The Velocity of Love</span>, along with a
+            landmark quad LP <span class="italic-text">LIVE Quadraphonic</span>,
+            which restarted her Buchla modular performances. Her work has been
+            featured in films, games, and countless commercials as well.
+          </div>
+          <div>
+            She was inducted into the first class of Keyboard Magazine’s Hall of
+            Fame alongside other synth luminaries, including Bob Moog, Don
+            Buchla, and Dave Smith and received the Moog Innovation Award. Most
+            recently, she is the recipient of the Independent Icon Award from
+            A2IM.
+          </div>
+          <div>
+            Suzanne has provided the voice and sounds for Bally’s groundbreaking
+            “Xenon” pinball machine, created Coca-Cola’s pop-and-pour sound,
+            designed logos for Fortune 500 companies, and carved out a niche as
+            one of the most creatively successful female composers in the world.
+            <span class="italic-text">A Life in Waves</span>, a documentary
+            about Ciani’s life and work, debuted at SXSW in 2017 and is
+            available to watch on all digital platforms.
+          </div>
+          <div>
+            Ciani is a graduate of Wellesley College and holds a Masters in
+            Music Composition from the University of California, Berkeley.
+          </div>
+          <div>
+            On a personal note — I was first introduced to Suzanne’s work at a
+            record store in Los Angeles where they were celebrating the
+            re-release of her
+            <span class="italic-text">Buchla Concerts 1975</span>
+            album. The album is a live performance on the Buchla synthesizer,
+            and I was fascinated by the sounds she was able to produce. Since
+            then, Suzanne has been a huge influence on my work and the way I
+            think about noise and sound. It was an honor to speak with her about
+            noise, and the way she thinks about life.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          What does noise mean to you, both as a person and as an artist?
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          Because of my relationship with the Buchla synthesizer, noise is my
+          access to the white noise generator and the creation of waveforms.
+          From what we know about white noise, it includes every frequency. I
+          use that as a starting point for my concerts. Whatever I’m going to do
+          is born out of noise, and I think that’s an appropriate connection
+          because everything is in there. We often think of noise as dissonance,
+          attack, or unwanted sound or chatter. But for me, noise is simply a
+          palette or a starting point.
+        </div>
+      </div>
+      <div class="interview-speaker-image">
+        <div class="image-container-interview" style="width: 25%">
+          <img src="media/images/sc-noise.png" alt="Image description" />
+        </div>
+        <div class="image-caption">
+          <a
+            href="https://buchla.com/product/266e/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >266e Source of Uncertainty Buchla synthesizer white noise
+            generator</a
+          >
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          <div>
+            It’s interesting to consider white noise as a starting point.
+            Certain psychologists think that the “sh” sound used by parents to
+            calm babies mimics the constant, whooshing white noise heard in the
+            womb, which is attributed to the mother’s blood flow and bodily
+            functions. This sound is thought to soothe infants by replicating
+            the comforting and familiar auditory environment of the womb, acting
+            as a form of white noise that can have a calming effect. The
+            relationship between white noise and birth is fascinating to me.
+          </div>
+          <div>
+            What did working with Don Buchla teach you about music and life?
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            I embraced his vision of a new musical instrument. It was the 200
+            series Buchla synthesizer then. This instrument was a complete
+            180-degree turn from my classical training. What he taught me was
+            freedom. He had an attitude until the end of working with his
+            instrument as a collaborative artistic expression. As an artist, I’m
+            working within the frame of what he’s given me as a tool. And that
+            tool is a very open architecture. There’s nothing defined. It gives
+            you so many choices to create and express yourself. You choose the
+            modules, you choose the patch, and you select the raw materials that
+            you’re going to use. But all of this choosing is an expression of
+            freedom in designing what it is that you’re going to do.
+          </div>
+          <div>
+            Don had a certain attitude towards the world. For instance, I would
+            ask him, “Don, this module will not tune properly; it’s driving me
+            crazy because I can’t calibrate it into my tuning system.” And he’d
+            look at me and say, “We’ll do something else. Don’t try to force
+            your will on something that doesn’t want to do what you want to do.”
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          <div>
+            Speaking of the Buchla synthesizer, an analog instrument, how do you
+            feel about the difference between analog and digital noise?
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            Theoretically, digital can do anything analog does because it’s just
+            a matter of computational power and direction. We all say that you
+            can replicate anything if you have enough data, and digital is data.
+            But in general, I don’t think that data alone is a measure of
+            musical functionality, so it’s not interesting to me that you might
+            be able to do it.
+          </div>
+          <div>
+            It’s like the difference between analog and digital recording
+            technology. During the transition from analog tape to digital
+            recording, I was doing an album and had two multi-track machines,
+            one analog and one digital. There was a 32-track Mitsubishi digital
+            machine02 and a 24-track analog tape recorder. As an experiment, I
+            would record each sound on both machines and then make a subjective,
+            empirical decision based on just my ears. In general, the
+            high-frequency sounds sounded better on the analog machine.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker-image">
+        <div class="image-container-interview" style="width: 80%">
+          <video width="320" height="240" autoplay loop muted>
+            <source src="media/videos/mit1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="image-caption">
+          <a
+            href="https://www.youtube.com/watch?v=dKjRbbqAJKE"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Mitsubishi digital audio equipment advertisement, 1986 ↗</a
+          >
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            I’m not trying to say that one is better than the other; it’s just a
+            different universe. The analog is softer because it’s a little bit
+            blurrier; it doesn’t have the edges that the digital one has. The
+            digital machines have these edges because they do everything in
+            increments, and even if those become infinitesimally small, they’re
+            still increments and samples. So, I prefer analog.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker-image">
+        <div class="image-container-interview" style="width: 100%">
+          <video width="100%" height="auto" autoplay loop muted>
+            <source src="media/videos/sc-buchla.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="image-caption">
+          <a
+            href="https://www.youtube.com/watch?v=QRx-YdqHLus"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Suzanne Ciani with Buchla synthesizer ↗</a
+          >
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          <div>
+            Many people gravitate towards analog machines and synthesizers
+            because of their ‘imperfect’ qualities. It’s nearly impossible to
+            replicate the same sound or patch again. What does perfection mean
+            to you, both as an artist and as a person?
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            There are different levels of perfection. I tend to be a
+            perfectionist in my studio album work because you’re in a situation
+            you can control to the nth degree. If you get carried away with that
+            control, though, you focus on minutia and aren’t focused as much on
+            the big picture. The issue with perfectionism is that it replaces an
+            appreciation for the whole, the communication of the whole, with a
+            microcosmic focus that, in the end, might not be that significant
+            for communication. We go down those perfectionistic tunnels as
+            almost a distraction from serving the communication.
+          </div>
+          <div>
+            What I love about live performances on the Buchla is that they are
+            always different. That’s what I mean when I say it’s alive. It’s a
+            life form of its own. That’s why we like it—it’s constantly changing
+            and not frozen. It’s not a digital sample, which might be
+            perfect—for example, a perfect sample of a perfect cello note. But
+            those samples are dead. To be alive, it has to be in motion.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          <div>
+            In the documentary about your life,
+            <span class="italic-text">A Life in Waves</span> (2017), it’s
+            mentioned that after being diagnosed with breast cancer and
+            confronting your mortality, you chose to move to California. Could
+            you share your thoughts on death? How do death and life influence
+            your work?
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker-image">
+        <div class="image-container-interview" style="width: 25%">
+          <img src="media/images/sc-alife.png" alt="Image description" />
+        </div>
+        <div class="image-caption">
+          <a
+            href="https://www.imdb.com/title/tt4521654/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="italic-caption">A Life in Waves</span>, 2017.↗
+            Documentary cover</a
+          >
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            I see life as a continuum. An individual has a specific span, and I
+            will die, predictably, within the next twenty years at most. Life
+            continues but is not housed in my existence. Right now, I’m very
+            concerned with the connections to the new generation, which will
+            carry on expressing and continuing the evolutionary process of the
+            work that I’m involved in.
+          </div>
+          <div>
+            As soon as I feel content that I’ve communicated what I have to say
+            and that it’s been heard, I’m happy. I don’t pretend to know where
+            it will go, but I know I’m a certain link in the chain. So, I want
+            that link to be connected to the chain properly before I go.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          <div>
+            Do you think that was a realization you had dealing with your
+            diagnosis? Or was that something that’s always been on your mind as
+            an artist and as a person?
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            I don’t think you can separate it. Confronting one’s mortality is a
+            shock. It’s shocking because if we lived our lives in constant
+            awareness of our mortality, we’d be crazy. But it’s a good thing to
+            put into one’s history.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          <div>
+            You released the album
+            <span class="italic-text">The Velocity of Love</span> in 1985. Can
+            you speak to what love means to you and the relationship between
+            love and your work?
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker-image">
+        <div class="image-container-interview" style="width: 50%">
+          <img src="media/images/sc-velocity.png" alt="Image description" />
+        </div>
+        <div class="image-caption">
+          <a
+            href="https://www.discogs.com/release/1489809-Suzanne-Ciani-The-Velocity-Of-Love"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="italic-caption">The Velocity of Love</span>, 1985,↗
+            Album cover</a
+          >
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            When I created the album, love was about a safe place. It wasn’t
+            romantic love. It wasn’t a person-to-person kind of love. I like to
+            think of love as a universal energy system or force. You don’t know
+            what it is, but know when you’re in it. You know when you feel it. I
+            like that album because it elicits whatever happens when we feel
+            love. After all, love is connection. We often consider it a
+            person-to-person connection, but it could be as expansive as the
+            universe.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          <div>
+            I remember hearing the album for the first time, and I know what you
+            mean. It was a safe space. When creating work today, do you still
+            feel like you are trying to create that safe space, or was that
+            album specific? How do you think about this while you are making new
+            work?
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            Until I returned to the Buchla synthesizer seven or eight years ago,
+            my career was rooted in classical music. Even though my first album,
+            <span class="italic-text">Seven Waves</span> (1982), was all
+            electronic, it was based on melody. And it was based on romance—not
+            in the sense of a relationship, romance, but in romantic music.
+            Romantic music was rooted in the idea that feeling was the focus.
+            The idea was to elicit human emotion.
+          </div>
+          <div>
+            What I’m doing now is more abstract. I’m in a chapter of my creative
+            life which could be related to the visual artist who starts out
+            doing representative work and then goes abstract. I’m in my abstract
+            period. But my abstract period still references my classical roots.
+            It’s just a new language. I create spaces, whether it’s an emotional
+            space or an actual immersive sonic space, which I’m doing now
+            because I’m focused on quadraphonic, spatial movement, and the
+            three-dimensionality of the experience of listening. Creating these
+            spaces is fundamental and essential to me.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker-image">
+        <div class="image-container-interview" style="width: 50%">
+          <img src="media/images/sc-seven-waves.png" alt="Image description" />
+        </div>
+        <div class="image-caption">
+          <a
+            href="https://www.discogs.com/master/161235-Suzanne-Ciani-Seven-Waves"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><span class="italic-caption">Seven Waves</span>, 1982,↗ Album
+            cover</a
+          >
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          <div>What does romanticism mean to you?</div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            It’s a dangerous precipice because there are different levels of
+            romanticism. For instance, there are cheap romance novels, romantic
+            bodices, etc. There can be less inspiring levels of what we call
+            romanticism. But for me, romanticism is the glue of the universe.
+            It’s the idea that you can see a connection in nature, that your
+            surroundings speak to you and include you, that you’re a part of it,
+            and that you’re connected to all you know.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          <div>
+            That’s beautiful. Thank you. Because of your approach to technology,
+            you opened new pathways for future artists, musicians, and designers
+            and gave them new ways to think. You thought about the future of
+            music in a radically different way, and this shaped your career and
+            the careers of others. What do you think about the future of
+            technology in art, music, and design?
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            It’s funny because many things I thought would happen in the future
+            haven’t happened until now. So, for me, this is almost a renaissance
+            or a rebirth. What we’re doing is we are going backward. It’s so
+            beautiful because there was a moment in history when we were about
+            to go to a particular place, but we didn’t get there. We saw the
+            future. But the future didn’t happen. Forty years later, it’s
+            happening. It wasn’t a continuum. It wasn’t like we got on a
+            trajectory, and we worked our way up to this point. No. It got lost.
+            Then we came back and reinvestigated. So, it’s not a continuum; it
+            is the finishing of something that was started and will continue.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="video-background">
+      <iframe
+        src="https://player.vimeo.com/video/943062696?background=1&autoplay=1&loop=1&mute=1"
+        frameborder="0"
+        allow="autoplay; fullscreen"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="interview-text">
+      <!-- intro  -->
+      <div class="interview-speaker">
+        <div class="interview-speaker-text-second">
+          <div>
+            But that break happened because of technology. It happened because
+            we got distracted by the pure technology of it, making it faster,
+            better, and cheaper; it was all about the tools. It was not about
+            realizing the real potential of the tools. We were just so focused
+            on our appetites. We went from LPs to CDs to DVDs, and eventually,
+            we became engulfed in the commercialization of technology, which
+            became exhausting. The kids got tired and just had to say, “No, wait
+            a minute, stop!” The rapid push towards technological innovation is
+            why we now see a transition back to LPs and modular synthesizers.
+            People are now interested in the interface. They are interested in
+            how you connect to it. You can create those interfaces in many ways.
+            For some reason, this didn’t happen until we went backward. Kids
+            today want to turn a knob; they don’t want to look at a menu. You
+            don’t want to choose from a list of 4,000 string sounds. It becomes
+            exhausting. What I’m interested in working with now is the immediate
+            satisfaction of interacting with the machine; there’s a deep joy in
+            that.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">CVA</div>
+        <div class="interview-speaker-text-first">
+          What I love about vinyl records, in particular, is that they force you
+          to slow down and genuinely appreciate the album from front to back.
+          There is no shuffle or skip. Plus, the physicality of holding the
+          artwork adds another dimension to attaching yourself to the work. Do
+          you think about the rapid push toward innovation with AI and large
+          language models?
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            We are fascinated by the possibility of something being created
+            without a human being generating it. You can go pretty far with
+            that. But to have the prompts or the raw materials to foster that
+            creation, you’re taking it from preexisting sources of creation.
+            You’re just doing a new mix.
+          </div>
+          <div>
+            Most of the world’s artistic content is recognized in the Pyramidal
+            structure of hierarchy. In our human creative lives, we’ve
+            consistently recognized communication levels and organized these
+            through hierarchical structures, whether that’s Michelangelo,
+            Leonardo Di Vinci, etc.… Now, it doesn’t mean as much because there
+            is business attached to the value of a piece of work, even if it
+            doesn’t have cultural or emotional meaning.
+          </div>
+        </div>
+      </div>
+
+      <div class="interview-speaker-image">
+        <div class="image-container-interview" style="width: 100%">
+          <img src="media/images/sc-anatomy.png" alt="Image description" />
+        </div>
+        <div class="image-caption">
+          <a
+            href="https://anatomyof.ai/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Kate Crawford, Vladan Joler.
+            <span class="italic-caption">Anatomy of an AI System</span>.↗
+            2018</a
+          >
+        </div>
+      </div>
+
+      <div class="interview-speaker">
+        <div class="interview-speaker-label">SC</div>
+        <div class="interview-speaker-text-second">
+          <div>
+            Most of the world’s artistic content is recognized in the Pyramidal
+            structure of hierarchy. In our human creative lives, we’ve
+            consistently recognized communication levels and organized these
+            through hierarchical structures, whether that’s Michelangelo,
+            Leonardo Di Vinci, etc.… Now, it doesn’t mean as much because there
+            is business attached to the value of a piece of work, even if it
+            doesn’t have cultural or emotional meaning.
+          </div>
+          <div>
+            But there have always been exceptional creators. To appreciate any
+            artistic expression, you must be able to see or hear it and take it
+            in; this can be lost on us if we don’t have the receptors to
+            understand it. It’s so subjective. I can play Beethoven’s Fifth
+            Symphony, and you could pass it by as if it were a news program if
+            you aren’t paying attention if you can’t receive it. So there’s the
+            generation and the receiver. All of that is non-literal. If I play a
+            concert and there are 1,000 people in the room, there are a thousand
+            different concerts. I do think that the ability to communicate on a
+            rarified or exceptional level is a very complex dynamic.
+          </div>
+          <div>
+            However, the problem with artificially generated art is that it has
+            no soul. And I know that sounds like a total dismissal, and I’m not
+            trying to say that it doesn’t have a wonderful place in our lives.
+            But I think that you still need the human. I’m still a romantic
+            about that one.
+          </div>
+        </div>
+      </div>
+
+
+    <div class="interview-speaker">
+      <div class="interview-speaker-label">CVA</div>
+      <div class="interview-speaker-text-first">
+        <div>
+          Do you have any advice for students or younger artists, designers, or
+          musicians?
+        </div>
+      </div>
+    </div>
+
+
+    <div class="interview-speaker">
+      <div class="interview-speaker-label">SC</div>
+      <div class="interview-speaker-text-second">
+        <div>
+          There’s all the standard stuff, “follow your vision,” “don’t give up.”
+          Oh, gosh! It all sounds so trite. But what I’ve always functioned from
+          is realizing that the seed of your expression is within yourself. So
+          you must be able to access communication within yourself, and if you
+          can communicate with yourself, you access a universal connection.
+          Because at our deepest, uncompromised, most open, vulnerable levels
+          with ourselves, we tap into the infinite. Do what speaks to you. Don’t
+          reference it outside for judgment. It isn’t very meaningful if
+          somebody else likes it. You should ask yourself if you have satisfied
+          your goal. Is that what you wanted to say without excuse? Do
+          non-apologetic work. Your self-satisfaction is the ultimate judgment.
+        </div>
+      </div>
+    </div>
+
+    <!-- bottom spacer -->
+    <div style="height: 150px"></div>
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script>
+      var iframe = document.querySelector(".video-background iframe");
+      var player = new Vimeo.Player(iframe);
+      var muteText = document.getElementById("muteText");
+      function toggleMute() {
+        player.getVolume().then(function (volume) {
+          if (volume > 0) {
+            player.setVolume(0);
+            muteText.textContent = "[UNMUTE]";
+          } else {
+            player.setVolume(1);
+            muteText.textContent = "[MUTE]";
+          }
+        });
+      }
+
+      var menuOverlay = document.getElementById("menuOverlay");
+      function toggleMenu() {
+        if (menuOverlay.style.display === "none") {
+          menuOverlay.style.display = "block";
+        } else {
+          menuOverlay.style.display = "none";
+        }
+      }
+
+      function toggleSubmenu(event) {
+        event.preventDefault(); // Prevent the link from navigating
+
+        var submenu = document.getElementById("submenu");
+        var arrow = document.getElementById("arrow");
+
+        if (submenu.style.display === "none") {
+          submenu.style.display = "block";
+          arrow.style.transform = "rotate(-90deg)";
+        } else {
+          submenu.style.display = "none";
+          arrow.style.transform = "rotate(0deg)";
+        }
+      }
+    </script>
+  </body>
+</html>
