@@ -52,6 +52,14 @@
 
       
     }
+.menu-left .menu-item {
+    font-family: 'ABCROM Heavy', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.3px;
+    cursor: pointer;
+    position: relative;
+    z-index: 201; /* Increase z-index value */
+}
     .menu-left, .menu-right {
         display: flex;
         gap: 20px;
@@ -110,6 +118,27 @@
         letter-spacing: 1.3px;
         font-size: 12px;
     }
+    #menuOverlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #4376BB;
+        color: black;
+        z-index: 200;
+        padding: 20px;
+        box-sizing: border-box;
+        font-family: 'ABCROM Heavy', sans-serif;
+        font-size: 12px;
+        letter-spacing: 1.3px;
+        .menu-item {
+        font-size: 30px; /* Adjust as needed */
+        line-height: 0.98;
+    }
+    }
+
     /* Media query for small screens */
     @media (max-width: 600px) {
         /* Hide menu-right */
@@ -127,13 +156,49 @@
             right: auto;
             left: 10px;
         }
+        
     }
-
+    #arrow {
+    transition: transform 0.1s ease-in-out;
+}
+#closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 40px;
+    width: 40px;
+    z-index: 999999;
+}
+#submenu {
+    display: flex;
+    flex-direction: column;
+}
 </style>
 </head>
 <body>
 <div id="muteText" onclick="toggleMute()">[UNMUTE]</div>
-<div id="mobileMenu">MENU</div>
+<div id="menuOverlay">
+        <div id="closeButton" onclick="toggleMenu()">X</div>
+     
+    <div class="menu-item"><a href="about.html">ABOUT</a></div>
+    <div class="menu-item"><a href="noise_index.html">NOISE INDEX</a></div>
+    <div class="menu-item">
+        <a href="#" onclick="toggleSubmenu(event)">INTERVIEWS</a>
+        <span id="arrow" style="display: inline-block; margin-left: -8px;">&lt;</span>
+        <div id="submenu" style="display: none;">
+            <div><a href="interview1.html">SUZANNE CIANI</a></div>
+            <div> <a href="interview2.html">KEVIN MCCAUGHEY</a></div>
+            <div> <a href="interview3.html">MITCH PAONE</a></div>
+            <div> <a href="interview4.html">HASSAN RAHIM</a></div>
+            <div> <a href="interview5.html">LAUREL SCHWULST</a></div>
+            <div> <a href="interview6.html">LOBSANG YONTEN</a></div>
+
+
+        </div>
+    </div>
+</div>
+<div id="mobileMenu" onclick="toggleMenu()">MENU</div>
 
 <div class="video-background">
     <iframe src="https://player.vimeo.com/video/943062696?background=1&autoplay=1&loop=1&mute=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
@@ -164,6 +229,30 @@
             }
         });
     }
+
+    var menuOverlay = document.getElementById('menuOverlay'); 
+    function toggleMenu() {
+        if (menuOverlay.style.display === 'none') {
+            menuOverlay.style.display = 'block';
+        } else {
+            menuOverlay.style.display = 'none';
+        }
+    }
+
+    function toggleSubmenu(event) {
+    event.preventDefault(); // Prevent the link from navigating
+
+    var submenu = document.getElementById('submenu');
+    var arrow = document.getElementById('arrow');
+
+    if (submenu.style.display === 'none') {
+        submenu.style.display = 'block';
+        arrow.style.transform = 'rotate(-90deg)';
+    } else {
+        submenu.style.display = 'none';
+        arrow.style.transform = 'rotate(0deg)';
+    }
+}
 </script>
 </body>
 </html>
