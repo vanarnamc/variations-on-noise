@@ -262,6 +262,10 @@ a {
 .interview-text {
     font-family: 'Abcrom Book', sans-serif;
     margin-bottom: 60px;
+    /* text-align: justify;
+    hyphens: auto;
+    hyphenate-limit-chars: 7 3 3; */
+
 }
 
 
@@ -269,8 +273,8 @@ a {
 .interview-speaker {
     display: flex;
     color: white;
-    margin: 0 350px;
-    font-size: 18px;
+    margin: 0 25vw;
+    font-size: 20px;
     margin-bottom: 20px;
     line-height: 1.1;
 }
@@ -279,7 +283,7 @@ a {
     display: flex;
     flex-direction: column;
     color: white;
-    margin: 0 350px;
+    margin: 0 25vw;
     font-size: 16px;
     margin-bottom: 30px;
     line-height: 1.1;
