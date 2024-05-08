@@ -47,7 +47,9 @@ body {
     font-family: 'ABCROM Book Italic';
     font-style: italic;
 }
-
+iframe {
+    border: none;
+}
 a {
     text-decoration: none;
     color: inherit;
@@ -387,7 +389,7 @@ a {
 
 
 .interview-speaker-text-first {
-    padding-left: 75px;
+    padding-left: 100px;
 }
 
 .interview-speaker-text-second {
@@ -416,6 +418,7 @@ a {
     }
 
 }
+
 
 #arrow {
     transition: transform 0.1s ease-in-out;
