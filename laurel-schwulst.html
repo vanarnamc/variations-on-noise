@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAUREL SCHWULST</title>
+    <link rel="icon" href="media/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="menuOverlay">
+        <div id="closeButton" onclick="toggleMenu()">X</div>
+        <div class="menu-item"><a href="about.html">ABOUT</a></div>
+        <div class="menu-item"><a href="noise_index.html">NOISE INDEX</a></div>
+        <div class="menu-item">
+            <a href="#" onclick="toggleSubmenu(event)">INTERVIEWS</a>
+            <span id="arrow" style="display: inline-block; margin-left: -8px">&lt;</span>
+            <div id="submenu" style="display: none">
+                <div><a href="interview1.html">SUZANNE CIANI</a></div>
+                <div><a href="interview2.html">KEVIN MCCAUGHEY</a></div>
+                <div><a href="interview3.html">MITCH PAONE</a></div>
+                <div><a href="interview4.html">HASSAN RAHIM</a></div>
+                <div><a href="interview5.html">LAUREL SCHWULST</a></div>
+                <div><a href="interview6.html">LOBSANG YONTEN</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="mobileMenu" onclick="toggleMenu()">MENU</div>
+
+    <div class="video-background">
+        <iframe src="https://player.vimeo.com/video/943062696?background=1&autoplay=1&loop=1&mute=1" frameborder="0"
+            allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="menu-bar">
+        <div class="menu-left">
+            <div class="menu-item"><a href="index.html">VARIATIONS ON NOISE</a></div>
+        </div>
+        <div class="menu-right">
+            <div class="menu-item"><a href="about.html">ABOUT</a></div>
+            <div class="menu-item"><a href="interviews.html">INTERVIEWS</a></div>
+            <div class="menu-item"><a href="noise_index.html">NOISE INDEX</a></div>
+        </div>
+    </div>
+
+    <div class="interview-headline">
+        <div id="name">
+            <div>LAUREL</div>
+            <div>SCHWULST</div>
+        </div>
+        <div id="sub-headline">
+            <div>MEANING</div>
+            <div>COMMUNICATION</div>
+            <div>CONTEXT</div>
+            <div>HUMANITY</div>
+
+        </div>
+    </div>
+
+
+    <div class="content-after-headline">
+
+        <div class="sticky-flex">
+            <div class="sticky-label-left">INTERVIEW</div>
+            <div class="sticky-label-right">LAUREL SCHWULST</div>
+        </div>
+
+        <div class="interview-text">
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>Laurel Schwulst is a designer, artist, writer, educator, and technologist. She is recognized
+                        for her experiential projects-as-worlds, her expanded writing practice, her creative direction
+                        leadership, her websites, her innovative learning materials and educational environments, and
+                        her ongoing collaborations. Her writing (published in venues including <span
+                            class="italic-text">The New York Times</span>, <span class="italic-text">
+                            The
+                            Creative Independent
+                        </span>, and <span class="italic-text">Art in America</span>) has taken the form of essays,
+                        perfume reviews, and
+                        interviews with other artists. For over a decade, she has taught award-winning design classes
+                        and workshops (at universities including Yale and Princeton), and has presented internationally
+                        at cultural, academic, and internet-native institutions (at venues including BBC Radio 4, RISD,
+                        University of Seoul, Google, and Wikipedia). Laurel currently lives in New York City, serves as
+                        director of the gift shop at Are.na (a platform for networked curation), and is working towards
+                        a “PBS of the Internet.”</div>
+                    <div>As an instructor and internet designer, Laurel’s thinking has played a major role in my work.
+                        Her unique perspective and lightness towards her practice is admirable. She can think deeply
+                        about the world while doing it in a playful way. Her vision of the future is refreshing in a
+                        time with so much uncertainty, but her love for humanity is what I find most intriguing. She
+                        doesn’t take herself too seriously, but in doing so has so much depth and breadth. After our
+                        conversation, I asked Laurel if she’d like to contribute a song for the mixtape that comes with
+                        the book. Her choice was <span class="italic-text">Your Wildlife</span> by Propaganda.</div>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>How do you define noise? What does noise mean to you, both as a person and as part of your
+                        practice? </div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>Noise is about ambience and the environment. It’s interesting to think about the difference
+                        between sound and noise. Not that I have a very big definition myself, but to me, sound seems
+                        more general than noise. It somehow feels more atmospheric.</div>
+                    <div>
+                        White noise, for me, holds a special significance. It’s the primal sound we encounter as infants
+                        in the womb, our first auditory experience. In contrast, the outside world seems eerily silent
+                        to babies. This notion of enveloping noise, perhaps, is a more natural state
+                        for us.
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 50%">
+                    <video width="100%" height="auto" autoplay loop muted>
+                        <source src="media/videos/ls-white-noise.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Visual representation of white noise.</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>That’s beautiful. My research has led me to explore different sorts of noise. For instance,
+                        there are noise algorithms for generating visuals. There’s visual noise in general, like static
+                        on a television, and also noise in economics, psychological noise, and more.</div>
+                    <div>When I read your piece on <a href="https://writings.laurel.world/the-cuteness-of-white-noise/"
+                            target="_blank">‘The cuteness of white noise,’<sub>↗</sub></a> I was drawn to the discussion
+                        about
+                        the relationship between birth or being in the womb and white noise. What I find intriguing
+                        about white noise is its sound perspective—it’s essentially all frequencies played at the same
+                        level. As you said, it’s like you’re enveloped in this encompassing frequency. And then you go
+                        to nothing. Maybe if we could expand a little bit more on any thoughts you have on that.</div>
+
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>We could think of white noise as the sonic equivalent of the color gray. Although, it’s funny
+                        because it’s called white noise. But it’s actually equal levels of these frequencies. Let’s
+                        think about the color gray and RGB; it’s an equal R, G, and B. Sometimes it’s easier to start
+                        sketching on a gray or brown page as opposed to a white page because it’s more in this middle
+                        ground, where we feel like we can go darker or lighter if we have a lighter colored pencil. In
+                        high school, I always used to sketch on brown paper.</div>
+                    <div>It also made the colors look nicer. And I often feel that web designers like gray, or at least
+                        presenting their work in gray, because so many websites are white by default, and it’s just nice
+                        to have some dimensionality to differentiate. It’s fun to think about the background color of
+                        websites.</div>
+                    This topic reminds me of a website and a piece of writing I did about <a
+                        href="https://laurelschwulst.com/e/the-evolving-designs-of-sulki-and-min/" target="_blank">Sulki
+                        and Min.<sub>↗</sub></a> They are two Korean designers based in Seoul and have been active since
+                    the early 2000s. I’m a big fan of them and their website. In my writing, I talked about why I liked
+                    their website. If you notice, there’s a visual noise GIF in the background. And that noise GIF is
+                    actually the GIF that was on the background of their site. When I wrote about their site in 2017, I
+                    thought bringing back the background noise made sense. So, I went to archive.org and reinstalled it
+                    on
+                    my site.
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 100%">
+                    <a href="https://laurelschwulst.com/e/the-evolving-designs-of-sulki-and-min/" target="_blank">
+                        <video width="100%" height="auto" autoplay loop muted>
+                            <source src="media/videos/ls-2.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Laurel Schwulst, <span class="italic-caption">(+.+) & ’*_*’: the evolving designs of sulki and
+                            min</span></div>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>
+                        Great. I’m excited to read it later. Another piece of your writing that I just read recently was
+                        this <a href="https://www.nytimes.com/interactive/2023/06/28/arts/kiki-bouba-effect.html"
+                            target="_blank">Kiki Bouba piece<sub>↗</sub></a> you did for <span class="italic-text">The
+                            New York Times</span>, which was
+                        so fun. For those not
+                        familiar, the effect is a classic psycho-linguistics experiment that explores the relationship
+                        between nonsense words and abstract shapes, revealing connections between the phonetic qualities
+                        of words and the visual characteristics of shapes, such as the sharp, abrupt sounds of “Kiki”
+                        contrasting with the soft, rounded sounds of “Bouba.”
+                    </div>
+                    <div>The Kiki Bouba effect made me think of semantic noise, which is described as the interference
+                        in communication caused by differences in words and symbols in different attributes. </div>
+                    <div>And what I found interesting about this Kiki Bouba effect is it almost feels like it cuts
+                        through the noise related to semantics. These are like atomic structures of thought that
+                        everyone can relate to. I was thinking about the difference between red and green. And how 86%
+                        of people agree that red is Kiki. How do you feel about the Kiki Bouba effect and its
+                        relationship to noise?</div>
+
+                </div>
+            </div>
+
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 100%">
+                    <a href="https://www.nytimes.com/interactive/2023/06/28/arts/kiki-bouba-effect.html"
+                        target="_blank">
+                        <video width="100%" height="auto" autoplay loop muted>
+                            <source src="media/videos/ls-3.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Screen recording from ‘The Kiki/Bouba Effect,’ an article by Laurel Schwulst, exploring the
+                        fascinating relationship between sound and shape.</div>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>What you’re speaking to is the strength of communication—specific communication without words,
+                        or just how communication can be precise but almost more sense-based through the five senses.
+                    </div>
+                    <div>Like you said, it’s crazy how accurate or maybe unanimous the red-green one was. I would assume
+                        everyone thinks Kiki is red and Bouba is green. In that way, you’re talking about cutting
+                        through the noise.</div>
+                    <div>I would say language and speech are kind of our default as humans. So, we have to find other
+                        ways of communicating to cut through the noise. Other examples might be sensory ways of
+                        communicating—for example, music or other sensory ways to communicate. It’s like, “Yeah that,
+                        that’s it.” But we can’t explain in words what “that” is. It’s almost as if it’s some mood. It’s
+                        interesting, there’s almost a Kiki mood. </div>
+
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>
+                        Towards the end of your essay, <a
+                            href="https://writings.laurel.world/the-cuteness-of-white-noise/" target="_blank">‘The
+                            cuteness of white noise,’<sub>↗</sub></a> you chose the digital version, not
+                        the analog version of these noise machines. What made you choose that one specifically, and what
+                        were their differences? And then, as a broader question, what are your thoughts on analog and
+                        digital noise?
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 30%">
+
+                    <img src="media/images/ls-lectrofan.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>“Lectrofan” digital white noise machine</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>It’s a fun question. Honestly, I think it was because I heard you could turn up the volume. And
+                        with the non-digital ones, you can’t turn up the volume because it’s essentially a fan. So, I
+                        guess I wanted that control. I also think it was just slightly cheaper. So, it was just an easy
+                        purchase on Amazon. It could be more pragmatic. But it’s funny; I only used it for a few years,
+                        and I don’t own it anymore. I don’t know what I did with it, but I don’t use a white noise
+                        machine anymore.</div>
+                    <div>Do you use one?</div>
+
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>I do. Yeah, I have the analog one. You mentioned it in your essay, but turning it on before
+                        sleep is habitual. I actually feel the same. </div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>Which manual one do you have?</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 30%">
+
+                    <img src="media/images/ls-dohm.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>“Dohm” analog white noise machine</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>I think it’s the…. I’d have to check. It’s one of the classic, most reviewed ones. But you can
+                        turn the knobs and control the pitch of the noise. As a web designer, how do you define noise on
+                        the Internet?</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>I think this is very related to the problem of our time. As we go on as a human society,
+                        informational noise is at an all-time high. Things are coming at us so fast—and all the time.
+                        It’s almost expected that we’re not only always available to incoming pings but also able to
+                        sift through all the news coming in. </div>
+                    <div>
+                        Sometimes, I consider myself a website designer, but I also think about these systems more in
+                        the big picture. I guess I’m always thinking about people’s attention. I consider attention to
+                        be one of the most valuable “currencies” of our time because paying attention to something means
+                        a lot in an ecosystem of many competing,
+                        noisy things.
+                    </div>
+                    <div>I have an are.na channel called <a href="https://www.are.na/laurel-schwulst/attention"
+                            target="_blank">Attention<sub>↗</sub></a> that I like to tend to sometimes. Whenever I
+                        return to it, I realize how important it is. </div>
+
+                </div>
+            </div>
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>And so noise for you on the Internet is informational.
+                        Is that right?</div>
+                </div>
+            </div>
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>Yeah, for sure. I wrote an essay called <a href="">
+                            <a href="https://thecreativeindependent.com/essays/laurel-schwulst-my-website-is-a-shifting-house-next-to-a-river-of-knowledge-what-could-yours-be/"
+                                target="_blank">
+                                “My website is a shifting house next to a river of
+                                knowledge. What could yours be?”
+                            </a><sub>↗</sub>
+                        </a> I collected some quotes that were then expressed as sparrow
+                        memes. The first sparrow meme was by the editor-in-chief of Wired magazine, Lewis Rosetto, in
+                        the early 90s. He basically says that meaning and context are the ultimate luxury in an age of
+                        information overload. It’s so interesting that he said that in 1993. Because it’s like, “Wow,
+                        they were feeling it then.” </div>
+                    <div>
+                        It’s only going to go up and up, I suppose. This conversation also reminds me of another piece I
+                        enjoy. Have you read <a href="https://calmtech.com/papers/coming-age-calm-technology"
+                            target="_blank">“The Coming Age of Calm Technology”<sub>↗</sub></a>?
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 100%">
+
+                    <img src="media/images/ls-sparrow.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Meme made by Laurel Schwulst for her essay “My website is a shifting house next to a river of
+                        knowledge, what could yours be?” Quote by Lewis Rosetto</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>I haven’t. Not yet</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+
+                    <div>Oh, wow, exciting. Yeah. I love that one. It’s also from the 90s. It’s from 1996. Two
+                        researchers at Xerox PARC wrote it. Sometimes, I give this to my students because this piece is
+                        almost the history of computing. They talk about how computers were so complex in the early days
+                        that they had to be big, like a mainframe. And many people shared one computer. Then we got to
+                        the age of personal computers, where every person had one computer. And now, we’re in an age of
+                        what they call ubiquitous computing, which is about many computers sharing each of us. I would
+                        also say, each of us having many computers. The Internet of things, sort of era. They talk
+                        about, okay, if we’re going to go from mainframe to ubiquitous computing, calmness will continue
+                        to be an important feeling we need to achieve in the design of computing and the design of the
+                        Internet. </div>
+                    <div>They say something interesting to me at the end about something they call the periphery. They
+                        say, “We use ‘periphery’ to name what we are attuned to without attending to it explicitly.”
+                        They explain how, when you’re driving, you’re always focused on the center of the road. But of
+                        course, you’re paying attention to other stuff like if there’s an accident zooming by.</div>
+                    <div>They say something counterintuitive, which is interesting. They say that they think a good
+                        strategy to work towards would be like driving when you’re focused but still attuned to the
+                        environment. There needs to be more things like this with the design of computers for the
+                        Internet—where these are sort of like atmospheric signals. But you’re still focused on your main
+                        thing. And they say that if you increase information overload a lot, we’ll have to deal with it.
+                        And that stuff is just going to zoom by. And then, maybe because we’re experiencing so much, we
+                        will be better at choosing what’s most important, which I find funny. But it’s kind of true in
+                        some ways.</div>
+                    <div>So I don’t know. Maybe I just went off the deep end a little bit. But I guess this is always
+                        something I think about. I don’t know if it’s enacted in my designs.</div>
+                    <div>I am designing this website for an architecture firm right now. One thing I’ve been thinking
+                        about is that they have projects all over the world. And they’re very interested in light
+                        websites and the five senses. I’ve been thinking about how it would be neat if there were a way
+                        to feel the place of the site when you’re on a certain project. So you could know it was sunset
+                        there or something like that.</div>
+                    <div>Even if it’s just the background color shifting some, there needs to be more ways to
+                        communicate that that’s on the periphery but still felt. </div>
+
+                </div>
+            </div>
+
+            <div class="video-background">
+                <iframe src="https://player.vimeo.com/video/943062696?background=1&autoplay=1&loop=1&mute=1"
+                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>It reminds me of certain websites that will be “closed after 5 pm” or on the weekends. It’s
+                        interesting to think of those alternative models. I know you think a lot about those models and
+                        question what’s accepted or the dominant narrative. So, on that topic, what do you think about
+                        the future of design on the Internet and interactive design, maybe one year or ten years from
+                        now?</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+
+                    <div>Yeah, it’s a good question. Maybe I’ve talked about this before, but two things are coming up
+                        for me. I think we will continue to see more and more less screen-based things. I’m also very
+                        curious about the future of audio just because I find it a bit more of a humane medium. It’s
+                        funny. You could have overlapping sounds, but there’s something about the directness and only
+                        being able to listen to one stream at a time that feels useful for being a healthy human. I also
+                        think about people walking around, looking at their phones, and crashing into each other. Or how
+                        their eyesight is eventually going to start to go.</div>
+                    <div>I’m just very interested in a future of more embodied technology that works for people and
+                        helps them achieve their goals rather than distracting them further.</div>
+                    <div>This is random and funny, but I was doing a workshop two weekends ago at the University of
+                        Tennessee. While I was there, I talked with one of the other faculty members at the University
+                        of Tennessee. She has two kids and said that one of her kids is next level and whenever he goes
+                        on the Internet or uses Minecraft, he says that he only uses it in peaceful mode. He won’t do
+                        anything destructive in Minecraft, and if he sees a violent video, he’ll be like, “No, I’m in
+                        peaceful mode.” I feel like the Internet needs some peaceful mode, not just for kids but for
+                        humanity in general.</div>
+
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 50%">
+
+                    <video width="100%" height="auto" autoplay loop muted>
+                        <source src="media/videos/ls-minecraft.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Minecraft (2011)</div>
+
+                </div>
+            </div>
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>I don’t know if this is actually going to be the future of the Internet, but it’s the future
+                        that I would like to see. Of course, if this is actually going to happen, it needs to come from
+                        the ground level. But I also think there needs to be some people in positions of power making
+                        big decisions who also think about this. </div>
+                    <div>Another thing I’ve been thinking about is maybe a kind of an intense view. But I believe many
+                        problems would be solved if we had upload and download limits, just in general, on the Internet.
+                        I moved last week, and I didn’t have Internet at my house for a few days, and the service was
+                        also bad; I only got 2 bars. So when I tried to load Instagram, no videos played. And I was
+                        thinking, “Oh, my God! Thank God! Like I didn’t wanna do that, anyway.” Of course, there’s value
+                        to Instagram sometimes, and I enjoy being connected to lots of smart and interesting people. But
+                        I feel like some limitation that’s imposed for a collective good would be possibly very
+                        valuable.</div>
+                    <div>I was talking to some friends last night about how we all think the Light Phone08 is cool. I
+                        don’t know if you’ve played with it. It’s like this E-ink phone. Do you know about it?</div>
+
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 20%">
+
+                    <img src="media/images/ls-light-phone.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Light Phone II (2023)</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>I may know it briefly. It’s sort of a phone with some limitations. Is that right?</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>Yeah, exactly. It has an E Ink display so it looks like a Kindle screen. The idea is that you
+                        get one that works in concert with your smartphone. And so if you want to go out on a walk but
+                        don’t want all of the functions of your smartphone, you take your Light phone out. Then, you can
+                        call and look up maps, text, and essential things. It’s like a way to be more present in the
+                        world when you’re mobile. Anyways, all of my friends think it’s cool. </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 100%">
+
+                    <video width="100%" height="auto" autoplay loop muted>
+                        <source src="media/videos/ls-sunset.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Laurel Schwulst, <span class="italic-caption">Untitled</span>, 2011</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>
+                        We were thinking, “It’d be awesome if everyone just had the Light Phone because then we wouldn’t
+                        have to explain, <span class="italic-text">‘Sorry, I’m on my Light Phone; I can’t receive images
+                            right now.’</span>” It would be more
+                        collective. I do know there was <a
+                            href="https://www.theatlantic.com/technology/archive/2024/03/teen-childhood-smartphone-use-mental-health-effects/677722/"
+                            target="_blank">an experiment<sub>↗</sub></a> where one school acquired Light Phones for all
+                        the
+                        students, measured the results, and said that it was really good for people’s attention levels
+                        over
+                        time.
+                    </div>
+                    <div>I feel that maybe at the school level, more experiments like this should take place. Because
+                        these populations are interlinked but still individual, they’re collective but not the size of a
+                        nation. Smaller places where you can do experiments like this.</div>
+                    <div>What do you think of all those ideas?</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 100%">
+                    <a href="https://laurelschwulst.com/e/flight-simulator-app/" target="_blank">
+
+                        <img src="media/images/ls-flight.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div><span class="italic-caption">flight simulator</span> by Laurel Schwulst is an “ode to airplane
+                        mode” and an app for ios and android. users put their phone into airplane mode for the duration
+                        of real flights in order to “travel” to this location and earn pins for each airport visited.
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+                    <div>Yeah. I agree with you on all of that. And I think the media needs to bring out the coolness of
+                        the Light Phone if we’re going to make that happen widespread. I have some younger family
+                        members, and the influence of being “cool” is very seductive. This influence of “coolness” can
+                        put you into some traps with social media and things like that.</div>
+                    <div>What are your thoughts on AI if a hopeful future looks like a step towards the Light Phone?
+                        Does AI get in the way of that? And how does that look in a world where AI is becoming
+                        increasingly a part of our lives?</div>
+
+                </div>
+            </div>
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>Everyone’s asking about AI, and I think it’s fascinating and insane at the same time. It can be
+                        a huge help for a lot of talented people to make their jobs easier. But it’s just good when we
+                        work with AI to understand its limitations and what it’s good at and not good at.</div>
+                    <div>There’s an article I’ve been enjoying by Elan Ullendorff. He writes this Substack called Deep
+                        Sea Diving, and he wrote a piece called <a
+                            href="https://escapethealgorithm.substack.com/p/the-new-turing-test" target="_blank">“The
+                            New Turing Test.”<sub>↗</sub></a> This talks about AI in the context of creativity.
+                        Actually, this circles back to that Lewis Rosetto quote, which says, “In an age of information
+                        overload, the ultimate luxury is meaning and context.” Elan says, “I have a nontraditional set
+                        of standards through which I encourage my students to evaluate their work (curiosity,
+                        criticality, communication, conscientiousness).”</div>
+                    <div>It has three simple criteria. </div>
+                    <div>
+                        <div>Number one. It feels like it came <span class="italic-text">from</span> someone. </div>
+                        <div>Number two. It feels like it was meant <span class="italic-text">for</span> someone.</div>
+                        <div>
+                            Number three. It feels like it belongs in a <span class="italic-text">particular
+                                context</span>.
+                            It’s aware of the place, time, culture, and artistic medium in which it will be consumed.
+                        </div>
+                    </div>
+                    <div>AI to me in general is similar to information overload. I agree with Elan when he says “But for
+                        everything else, asking how much AI is in something may be less important than a simpler
+                        question: how much humanity is in it?” I don’t know how to answer this regarding a feature of
+                        the Internet. I find AI quite helpful in certain contexts. But I think the humanity thing is key
+                        and something I’m interested in.</div>
+                    <div>One other thread I’ve been thinking about is, in an age when we’re getting good at talking to
+                        computers, basically, in an age when we’re getting good at asking Chat GPT questions, I think it
+                        becomes increasingly important for us to learn how to talk to ourselves, and speak to other
+                        humans. And I find that conversation being the medium quite interesting. Gordon Brander is
+                        working on this <a href="https://subconscious.substack.com/p/subconscious-alpha"
+                            target="_blank">enchanted notes app<sub>↗</sub></a>, which is a notes app for yourself. But
+                        what it does is it
+                        uses AI in the notes app to bring up unexpected connections between things that you’ve written
+                        down in the past. I find that a very cool and valuable use of AI to help you understand links in
+                        your thinking. To help you become a better human.</div>
+
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 20%">
+                    <a href="https://subconscious.substack.com/p/subconscious-alpha" target="_blank">
+
+                        <img src="media/images/LS-app.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Subconscious Alpha “enchanted notes app” by Gordon Brander</div>
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>I don’t know if I’ve answered the question. But those are some starting thoughts.
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+
+                    <div>I appreciate it. AI has huge potential for good and huge potential for bad; that’s obvious.
+                        Some of the advertisements for good still seem dystopic, so I’m trying to find better
+                        alternatives. This app you’re talking about sounds interesting, though. I love the idea. </div>
+                    <div>What advice would you give to younger designers, younger people trying to work in the field,
+                        people on the internet, or just humans? </div>
+
+
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>My first thought has to do with humanity. One thing I like about working in the digital is that
+                        it makes me more aware of how links exist in the physical, especially in terms of networks of
+                        people.</div>
+                    <div>Something nice about starting to research this architecture website I’m currently working on is
+                        that I’ve been going through all the texts of their books and their practice. As I look through
+                        these books, I’m like, “Wow, the website is basically here; in the books, I just have to
+                        translate it.” I find that thinking about one’s practice in terms of links of people or
+                        structures that are just emergent is valuable, and we don’t need to outsource everything to be
+                        digital all the time because links are already inherently human. I hope that’s not too abstract
+                        of a piece of advice.</div>
+                    <div>I also think maybe a good piece of advice that calms me a lot is to work with what’s here—that
+                        is, what’s already here. I don’t actually need to invent anything new. It might be just about
+                        rearranging some stuff or translating some stuff.</div>
+                    <div>In art school, there’s always this pressure to invent, invent, invent. But we can rethink what
+                        invention means, and sometimes, it can be about rearrangement or arrangement or translation—a
+                        translation to a new age or something like that.</div>
+
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 100%">
+                    <a href="https://www.nytimes.com/interactive/2021/05/19/style/how-to-build-a-bird-kite.html"
+                        target="_blank">
+                        <video width="100%" height="auto" autoplay loop muted>
+                            <source src="media/videos/ls-kite.mp4" type="video/mp4" />
+                            Your browser does not support the video tag.
+                        </video>
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Laurel Schwulst, “How to Build a Kite” <span class="italic-caption">The New York Times</span>,
+                        2021</div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">CVA</div>
+                <div class="interview-speaker-text-first">
+
+                    <div>Are you thinking about this as maybe spending more time
+                        to notice?</div>
+
+
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-label">LS</div>
+                <div class="interview-speaker-text-second">
+                    <div>Yes, exactly; I love that. </div>
+                    <div>Okay, maybe last thought, this links to the second half of the semester in my Princeton class.
+                        I’m going to be doing a project with everyone called “local website.”</div>
+                    <div>The plan is for everyone to choose a location on campus and make a website accessible only in
+                        that location. So, it’s going to start with some site-specificity assignments. It will be about
+                        noticing the site and atmospheric attunement. I’m inviting this artist and my friend named
+                        Austin Wade Smith into my class, and they’re giving a lecture that I’m excited about called
+                        <span class="italic-text">Aeromancy in Everyday Life</span>. Aeromancy is a fancy word that means atmospheric conditions. And so
+                        they’ll talk about how their practice is interested in understanding the atmosphere in many
+                        different ways.</div>
+                    <div>It’s going to end with a little workshop on how to become more attuned to your site, and then I
+                        think we might fly kites after that. </div>
+                    <div>I’m excited. </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- bottom spacer -->
+            <div style="height: 150px"></div>
+
+
+            <script src="https://player.vimeo.com/api/player.js"></script>
+            <script>
+                var iframe = document.querySelector(".video-background iframe");
+                var player = new Vimeo.Player(iframe);
+                var muteText = document.getElementById("muteText");
+                function toggleMute() {
+                    player.getVolume().then(function (volume) {
+                        if (volume > 0) {
+                            player.setVolume(0);
+                            muteText.textContent = "[UNMUTE]";
+                        } else {
+                            player.setVolume(1);
+                            muteText.textContent = "[MUTE]";
+                        }
+                    });
+                }
+
+                var menuOverlay = document.getElementById("menuOverlay");
+                function toggleMenu() {
+                    if (menuOverlay.style.display === "none") {
+                        menuOverlay.style.display = "block";
+                    } else {
+                        menuOverlay.style.display = "none";
+                    }
+                }
+
+                function toggleSubmenu(event) {
+                    event.preventDefault(); // Prevent the link from navigating
+
+                    var submenu = document.getElementById("submenu");
+                    var arrow = document.getElementById("arrow");
+
+                    if (submenu.style.display === "none") {
+                        submenu.style.display = "block";
+                        arrow.style.transform = "rotate(-90deg)";
+                    } else {
+                        submenu.style.display = "none";
+                        arrow.style.transform = "rotate(0deg)";
+                    }
+                }
+            </script>
+</body>
+
+</html>
