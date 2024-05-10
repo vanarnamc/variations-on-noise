@@ -414,22 +414,47 @@ sub {
 
 /* Media query for small screens */
 @media (max-width: 600px) {
-
+    .interview-headline {
+        font-size: 3em;
+        /* Adjust as needed */
+        line-height: .8;
+    }
     /* Hide menu-right */
     .menu-right {
         display: none;
     }
+        /* Hide sticky-flex */
+        .sticky-flex {
+            display: none;
+        }
 
     /* Show mobile menu text */
     #mobileMenu {
         display: block;
-    }
+        position: fixed;
 
+    }
     /* Move muteText to the top left */
     #muteText {
         right: auto;
         left: 10px;
     }
+    .interview-speaker{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .interview-speaker-text-first {
+        padding-left: 10px;
+    }
+
+    .interview-speaker-label {
+        display: inline;
+        position: static;
+        padding-right: 20px;
+    }
+   
 
 }
 
