@@ -446,12 +446,19 @@ sub {
         margin-top: 0;
     }
     .interview-speaker-text-first {
-        padding-left: 10px;
+        padding-left: 0px;
+        text-indent: 60px;
     }
+    .interview-speaker-text-second {
+        padding-left: 0px;
+        text-indent: 60px;
+    }
+
 
     .interview-speaker-label {
         display: inline;
-        position: static;
+        position: absolute;
+        left: 0;
         padding-right: 20px;
     }
    .interview-speaker-image{
