@@ -776,9 +776,11 @@
                         that location. So, it’s going to start with some site-specificity assignments. It will be about
                         noticing the site and atmospheric attunement. I’m inviting this artist and my friend named
                         Austin Wade Smith into my class, and they’re giving a lecture that I’m excited about called
-                        <span class="italic-text">Aeromancy in Everyday Life</span>. Aeromancy is a fancy word that means atmospheric conditions. And so
+                        <span class="italic-text">Aeromancy in Everyday Life</span>. Aeromancy is a fancy word that
+                        means atmospheric conditions. And so
                         they’ll talk about how their practice is interested in understanding the atmosphere in many
-                        different ways.</div>
+                        different ways.
+                    </div>
                     <div>It’s going to end with a little workshop on how to become more attuned to your site, and then I
                         think we might fly kites after that. </div>
                     <div>I’m excited. </div>
@@ -795,52 +797,9 @@
 
 
             <script src="https://player.vimeo.com/api/player.js"></script>
-            <script>
-                var iframe = document.querySelector(".video-background iframe");
-                var player = new Vimeo.Player(iframe);
-                var muteText = document.getElementById("muteText");
-                function toggleMute() {
-                    player.getVolume().then(function (volume) {
-                        if (volume > 0) {
-                            player.setVolume(0);
-                            muteText.textContent = "[UNMUTE]";
-                        } else {
-                            player.setVolume(1);
-                            muteText.textContent = "[MUTE]";
-                        }
-                    });
-                }
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-                var menuOverlay = document.getElementById("menuOverlay");
-                function toggleMenu() {
-                    if (menuOverlay.style.display === "none") {
-                        menuOverlay.style.display = "block";
-                    } else {
-                        menuOverlay.style.display = "none";
-                    }
-                }
-
-                function toggleSubmenu(event) {
-                    event.preventDefault(); // Prevent the link from navigating
-
-                    var submenu = document.getElementById("submenu");
-                    var arrow = document.getElementById("arrow");
-
-                    if (submenu.style.display === "none") {
-                        submenu.style.display = "block";
-                        arrow.style.transform = "rotate(-90deg)";
-                    } else {
-                        submenu.style.display = "none";
-                        arrow.style.transform = "rotate(0deg)";
-                    }
-                }
-
-                for (video of document.getElementsByTagName("video")) {
-  video.setAttribute("playsinline", "");
-  video.setAttribute("muted", "");
-  video.play();
-}
-            </script>
+            <script src="script.js"></script>
 </body>
 
 </html>

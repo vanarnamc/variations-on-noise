@@ -1,25 +1,62 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var words = document.querySelectorAll('.word');
-  var body = document.querySelector('body');
-  var currentWord = 0;
+var iframe = document.querySelector(".video-background iframe");
+var player = new Vimeo.Player(iframe);
+var muteText = document.getElementById("muteText");
+function toggleMute() {
+    player.getVolume().then(function (volume) {
+        if (volume > 0) {
+            player.setVolume(0);
+            muteText.textContent = "[UNMUTE]";
+        } else {
+            player.setVolume(1);
+            muteText.textContent = "[MUTE]";
+        }
+    });
+}
 
-  function cycleWords() {
-      // Remove 'visible' class from the current word
-      words[currentWord].classList.remove('visible');
+var menuOverlay = document.getElementById("menuOverlay");
+function toggleMenu() {
+    if (menuOverlay.style.display === "none") {
+        menuOverlay.style.display = "block";
+    } else {
+        menuOverlay.style.display = "none";
+    }
+}
 
-      // Increment the word index
-      currentWord = (currentWord + 1) % words.length;
+function toggleSubmenu(event) {
+    event.preventDefault(); // Prevent the link from navigating
 
-      // Add 'visible' class to the new current word
-      words[currentWord].classList.add('visible');
+    var submenu = document.getElementById("submenu");
+    var arrow = document.getElementById("arrow");
 
-      // Toggle the inverted class on the body to change colors
-      body.classList.toggle('inverted');
-  }
+    if (submenu.style.display === "none") {
+        submenu.style.display = "block";
+        arrow.style.transform = "rotate(-90deg)";
+    } else {
+        submenu.style.display = "none";
+        arrow.style.transform = "rotate(0deg)";
+    }
+}
 
-  // Start the cycle with the first word
-  words[currentWord].classList.add('visible');
+for (video of document.getElementsByTagName("video")) {
+    video.setAttribute("playsinline", "");
+    video.setAttribute("muted", "");
+    video.play();
+}
 
-  // Set an interval for how often to cycle words (and change colors)
-  setInterval(cycleWords, 550); // Change word every 550 milliseconds
+$(document).ready(function() {
+  // This code runs when the document is ready
+  $('.interview-speaker-image').each(function() {
+    var $imageContainer = $(this).find('.image-container-interview');
+    var parentWidth = $(this).width(); // Width of the parent container
+    var containerWidth = $imageContainer.width(); // Current width of the image container
+
+    // Check if the container's width is less than 100% of its parent
+    if (containerWidth < parentWidth) {
+      // Calculate the new width, increase by 10%
+      var newWidth = containerWidth + parentWidth * 0.1;
+
+      // Set the new width, but ensure it does not exceed 100% of the parent width
+      $imageContainer.width(Math.min(newWidth, parentWidth));
+    }
+  });
 });

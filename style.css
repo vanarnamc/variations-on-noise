@@ -461,8 +461,6 @@ video{
         padding-left: 0px;
         text-indent: 50px;
     }
-
-
     .interview-speaker-label {
         display: inline;
         position: absolute;
@@ -472,8 +470,10 @@ video{
    .interview-speaker-image{
     margin:10px;
    }
-   .image-container-interview {
-    width: 100% !important;
+
+.italic-text{
+    font-family: 'ABCROM MediumItalic';
+    font-style: italic;
 }
 }
 
