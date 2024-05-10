@@ -444,6 +444,11 @@ sub {
         margin-right: 10px;
         margin-bottom: 0;
         margin-top: 0;
+        font-size: 15px;
+        font-family: 'ABCROM Medium';
+        /* text-align: justify;
+        hyphens: auto;
+        hyphenate-limit-chars: 7 3 3; */
     }
     .interview-speaker-text-first {
         padding-left: 0px;
