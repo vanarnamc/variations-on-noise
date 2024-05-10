@@ -445,9 +445,10 @@ video{
     .interview-speaker{
         margin-left: 10px;
         margin-right: 10px;
-        margin-bottom: 0;
+        margin-bottom: 10PX;
         margin-top: 0;
         font-size: 15px;
+        line-height: 1.2;
         font-family: 'ABCROM Medium';
         /* text-align: justify;
         hyphens: auto;
@@ -474,6 +475,21 @@ video{
 .italic-text{
     font-family: 'ABCROM MediumItalic';
     font-style: italic;
+}
+.interview-speaker:first-child {
+    margin-top: 100px;
+}
+
+/* space in between paragraphs */
+.interview-speaker-text-second>div {
+    margin-bottom: 0px;
+    /* Adjust the value as needed */
+}
+
+/* space in between paragraphs */
+.interview-speaker-text-first>div {
+    margin-bottom: 0px;
+    /* Adjust the value as needed */
 }
 }
 
