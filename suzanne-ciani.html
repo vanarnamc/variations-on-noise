@@ -692,45 +692,7 @@
     <!-- bottom spacer -->
     <div style="height: 150px"></div>
     <script src="https://player.vimeo.com/api/player.js"></script>
-    <script>
-      var iframe = document.querySelector(".video-background iframe");
-      var player = new Vimeo.Player(iframe);
-      var muteText = document.getElementById("muteText");
-      function toggleMute() {
-        player.getVolume().then(function (volume) {
-          if (volume > 0) {
-            player.setVolume(0);
-            muteText.textContent = "[UNMUTE]";
-          } else {
-            player.setVolume(1);
-            muteText.textContent = "[MUTE]";
-          }
-        });
-      }
-
-      var menuOverlay = document.getElementById("menuOverlay");
-      function toggleMenu() {
-        if (menuOverlay.style.display === "none") {
-          menuOverlay.style.display = "block";
-        } else {
-          menuOverlay.style.display = "none";
-        }
-      }
-
-      function toggleSubmenu(event) {
-        event.preventDefault(); // Prevent the link from navigating
-
-        var submenu = document.getElementById("submenu");
-        var arrow = document.getElementById("arrow");
-
-        if (submenu.style.display === "none") {
-          submenu.style.display = "block";
-          arrow.style.transform = "rotate(-90deg)";
-        } else {
-          submenu.style.display = "none";
-          arrow.style.transform = "rotate(0deg)";
-        }
-      }
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
