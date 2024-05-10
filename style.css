@@ -472,7 +472,9 @@ video{
    .interview-speaker-image{
     margin:10px;
    }
-
+   .image-container-interview {
+    width: 100% !important;
+}
 }
 
 
