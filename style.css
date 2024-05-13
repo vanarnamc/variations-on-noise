@@ -28,14 +28,16 @@
     src: url(fonts/ABCROMMono-MediumItalic-Trial.otf);
 }
 
-@font-face{
+@font-face {
     font-family: 'ABCROM Book';
     src: url(fonts/ABCROM-Book-Trial.otf);
 }
-@font-face{
+
+@font-face {
     font-family: 'ABCROM Book Italic';
     src: url(fonts/ABCROM-BookItalic-Trial.otf);
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -44,24 +46,149 @@ body {
     overflow-x: hidden;
 }
 
+.noise-title {
+    font-family: 'ABCROM Heavy';
+    color: black;
+    /* Change this to the color you want */
+    font-size: 5em;
+    /* Change this to the size you want */
+    cursor: pointer;
+    /* Changes the cursor to a hand when hovering over the title */
+    text-transform: uppercase;
+    /* Makes the text uppercase */
+    line-height: .8;
+}
+
+.noise-description-part {
+    font-family: 'ABCROM Medium';
+    color: #000000;
+    /* Change this to the color you want */
+    font-size: 20px;
+    /* Change this to the size you want */
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.noise-title:hover {
+    color: #4376BB;
+}
+
+.image-description-index {
+    /* color: #4376BB; */
+    font-family: 'ABCROM MonoMedium';
+    display: none;
+    color: black;
+    line-height: 1;
+    text-align: center;
+    /* Change text color on hover */
+    font-size: 12px;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-flow: dense;
+}
+
+.noise-info {
+    grid-column: 1;
+}
+
+.image-div {
+    grid-column: 2;
+}
+
+#noise-container {
+    display: flex;
+    flex-direction: column;
+}
+.sticky-container {
+    position: relative;
+}
+
+.image-container{
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.noise-description,
+.noise-images {
+    display: none;
+    
+    /* Initially hide the description and images */
+}
+
+.noise-image {
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 75%;
+
+}
+
+.noise-images {
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+}
+
+
+
+
 .italic-text {
     font-family: 'ABCROM Book Italic';
     font-style: italic;
 }
+
 iframe {
     border: none;
 }
+
 .iframe-container {
     width: 100%;
-    aspect-ratio: 16 / 9; /* Adjust this based on your video's aspect ratio */
+    aspect-ratio: 16 / 9;
+    /* Adjust this based on your video's aspect ratio */
     overflow: hidden;
-  }
+}
 
-  .iframe-container iframe {
+.iframe-container-3-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* centers horizontally */
+    align-items: center;
+    /* centers vertically */
+    aspect-ratio: 2.1;
+    /* Adjusted based on your video's aspect ratio */
+    overflow: hidden;
+}
+
+.iframe-container iframe {
     width: 100%;
     height: 100%;
     border: none;
-  }
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -70,12 +197,14 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
 sub {
     vertical-align: top;
     font-size: 10px;
     font-family: 'ABCROM Medium';
 }
-video{
+
+video {
     pointer-events: none;
 }
 
@@ -154,10 +283,12 @@ video{
     background-color: #4376BB;
     width: 100%;
 }
+
 .underline-text {
     position: relative;
     padding-bottom: 10px;
 }
+
 .underline-text::after {
     content: '';
     position: absolute;
@@ -257,6 +388,7 @@ video{
 .interview-link-wrapper:hover {
     background-color: black;
     color: #4376BB;
+    text-decoration: none;
     /* Change text color on hover */
 }
 
@@ -372,6 +504,7 @@ video{
 .image-caption a:hover {
     text-decoration: underline;
 }
+
 .interview-speaker {
     position: relative;
 }
@@ -386,20 +519,23 @@ video{
 
 .content-after-headline {
     position: relative;
-     width: 100vw;
+    width: 100vw;
 }
-.sticky-flex{
+
+.sticky-flex {
     font-family: 'ABCROM Heavy', sans-serif;
     display: flex;
     font-size: 12px;
     letter-spacing: 1.3px;
     position: sticky;
-    top: 50vh; /* Adjust this value as needed */
+    top: 50vh;
+    /* Adjust this value as needed */
     justify-content: space-between;
-    width: 100%;   
- }
+    width: 100%;
+}
 
-.sticky-label-left, .sticky-label-right {
+.sticky-label-left,
+.sticky-label-right {
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -434,14 +570,16 @@ video{
         /* Adjust as needed */
         line-height: .8;
     }
+
     /* Hide menu-right */
     .menu-right {
         display: none;
     }
-        /* Hide sticky-flex */
-        .sticky-flex {
-            display: none;
-        }
+
+    /* Hide sticky-flex */
+    .sticky-flex {
+        display: none;
+    }
 
     /* Show mobile menu text */
     #mobileMenu {
@@ -449,12 +587,14 @@ video{
         position: fixed;
 
     }
+
     /* Move muteText to the top left */
     #muteText {
         right: auto;
         left: 10px;
     }
-    .interview-speaker{
+
+    .interview-speaker {
         margin-left: 10px;
         margin-right: 10px;
         margin-bottom: 10PX;
@@ -466,43 +606,62 @@ video{
         hyphens: auto;
         hyphenate-limit-chars: 7 3 3; */
     }
+
     .interview-speaker-text-first {
         padding-left: 0px;
         text-indent: 50px;
     }
+
     .interview-speaker-text-second {
         padding-left: 0px;
         text-indent: 50px;
     }
+
     .interview-speaker-label {
         display: inline;
         position: absolute;
         left: 0;
         padding-right: 20px;
     }
-   .interview-speaker-image{
-    margin:10px;
-   }
 
-.italic-text{
-    font-family: 'ABCROM MediumItalic';
-    font-style: italic;
-}
-.interview-speaker:first-child {
-    margin-top: 100px;
-}
+    .interview-speaker-image {
+        margin: 10px;
+    }
 
-/* space in between paragraphs */
-.interview-speaker-text-second>div {
-    margin-bottom: 0px;
-    /* Adjust the value as needed */
-}
+    .italic-text {
+        font-family: 'ABCROM MediumItalic';
+        font-style: italic;
+    }
 
-/* space in between paragraphs */
-.interview-speaker-text-first>div {
-    margin-bottom: 0px;
-    /* Adjust the value as needed */
-}
+    .interview-speaker:first-child {
+        margin-top: 100px;
+    }
+
+    /* space in between paragraphs */
+    .interview-speaker-text-second>div {
+        margin-bottom: 0px;
+        /* Adjust the value as needed */
+    }
+
+    /* space in between paragraphs */
+    .interview-speaker-text-first>div {
+        margin-bottom: 0px;
+        /* Adjust the value as needed */
+    }
+
+    #noise-container {
+        flex-direction: column;
+    }
+
+    .noise-images {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    .image-wrapper {
+        width: 100%;
+    }
 }
 
 

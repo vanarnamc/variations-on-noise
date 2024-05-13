@@ -1,0 +1,184 @@
+{
+  "Sheet1": [
+    {
+      "Type of Noise": "Blue Noise",
+      "Description": "In the context of sampling and dithering, blue noise has a power density that increases with frequency. This property is desirable for sampling because it allows for an even distribution of error or noise across the spectrum, which can make the noise less noticeable.\r\tThe name “blue” in “blue noise” comes from the association with the color blue in the visible light spectrum, where blue light has a higher frequency than most other colors visible to the human eye. In the context of signals and noise, blue noise is characterized by its power spectral density, which increases with increasing frequency. This type of noise distribution is helpful in various applications, such as dithering in digital signal processing and image processing, where it helps to distribute error or noise uniformly across different frequencies, leading to a more pleasing or less noticeable result. The term contrasts with other types of noise, such as “white noise,” which has a constant power spectral density across frequencies, and “red noise,” or “Brownian noise,” where power decreases with increasing frequency.",
+      "Image": "blue-noise-1, blue-noise-2",
+      "Image Description": "Top: uniform blue noise texture \rBottom: example of white vs blue noise used for dithering"
+    },
+    {
+      "Type of Noise": "Brown Noise",
+      "Description": "Brownian noise, also known as Brown noise or red noise, is named after the botanist Robert Brown, who observed the phenomenon of random particle movements in fluid in 1827. This type of noise has a power density that decreases with the increase in frequency, producing a deeper sound than white or pink noise. It is reminiscent of the low, powerful rumble of a thunderstorm or the deep roar of a waterfall. Brownian noise is used for sound masking, sleep aids, and audio testing due to its strong lower frequencies. According to The Washington Post, “For some with ADHD, the low rumble of brown noise quiets the brain.”",
+      "Image": "brown-noise-1, brown-noise-2",
+      "Image Description": "Top: Robert Brown, botanist b. 1773 \nBottom: Brown noise frequency spectrum"
+    },
+    {
+      "Type of Noise": "Communication Noise",
+      "Description": "Communication noise or interference can disrupt the intended message in various ways, including physical, physiological, technical, organizational, cultural, psychological, and semantic noise. Such interference alters audience focus, understanding, and reception of messages. Strategies to mitigate these noises include controlling physical noise when possible, adapting messages to physiological states, ensuring technical reliability, respecting organizational communication channels, being aware of cultural differences, and using clear, jargon-\nfree language​. \r\t“Noise Matters: The Evolution of Communication” by R. Haven Wiley examines communication’s evolutionary aspects, emphasizing how organisms adapt to noise within their environments to convey signals effectively. Through an evolutionary lens, Wiley highlights the intrinsic role of noise in shaping communication strategies across species, offering insights into the complex interplay between signal transmission and environmental noise.\r\r“Interference in Communication Processes.” Communication for Professionals, Lumen Learning",
+      "Image": "communication-noise-1, communication-noise-2",
+      "Image Description": "Top: Noise Matters: The Evolution of Communication. \nHarvard University Press, 2015. Book Cover.\rBottom: The Process of Translation"
+    },
+    {
+      "Type of Noise": "Economic Noise",
+      "Description": "Economic Noise is defined by author and psychologist Daniel Kahneman in economics and decision-making contexts as the unwanted variability in professional judgments that leads to inconsistency and errors, even when the same information is available. This concept, detailed in his book “Noise: A Flaw in Human Judgment,” co-authored with Olivier Sibony and Cass R. Sunstein, extends the traditional understanding of noise to financial markets and economic forecasting. Kahneman distinguishes noise from bias — the latter being a systematic deviation from accuracy — emphasizing that noise represents random variability in decisions that should be uniform. His work reveals the pervasive effects of noise across various fields, including medicine, law, and human resources, often overlooked yet significantly impacting accuracy and fairness. Kahneman’s insights stress the importance of identifying, measuring, and mitigating noise to enhance decision-making quality across disciplines, highlighting its broader implications beyond economic and financial analysis.",
+      "Image": "economic-noise-1",
+      "Image Description": "Kahneman, Daniel, Olivier Sibony, and Cass R. Sunstein. “Targets Illustrating Accuracy, Noise, Bias, and Both Biased & Noisy Decisions.” Noise: A Flaw in Human Judgment"
+    },
+    {
+      "Type of Noise": "Environmental Noise",
+      "Description": "Environmental noise in communication refers to external, physical disturbances that can disrupt or interfere with the transmission and reception of intended messages. Examples include background conversations, traffic sounds, construction noise, and any other auditory or visual distractions in the environment.\r\tMuzak, for instance, is a corporation that uses external stimuli to influence the psychological states and behaviors of individuals, impacting their perception of their surroundings. By playing background music in various environments such as stores, restaurants, or offices, Muzak aims to create specific atmospheres or moods, contributing to the overall environmental ambience.",
+      "Image": "environmental-noise-1, environmental-noise-2",
+      "Image Description": "Top: Construction of the Pont de Normandie (Normandy Bridge)\rBottom: Muzak corporation logo"
+    },
+    {
+      "Type of Noise": "Noise Music",
+      "Description": "\rNoise music is a genre that challenges the conventional distinction between musical and non-musical sound. It includes a wide range of musical styles and sound-based creative practices that feature noise as a primary aspect of their practice. Though incomplete, listed below are outstanding examples, from American Harsh Noise to Cut Up to ‘Old School’ Industrial. ",
+      "Image": "noise-music-1",
+      "Image Description": "Vomir"
+    },
+    {
+      "Type of Noise": "American Harsh Noise",
+      "Description": "\rAmerican Harsh Noise was created around the early 1990s. The original artists who helped develop this sound are The Haters, Daniel Menche, Macronympha, and Richard Ramirez.",
+      "Image": "american-harsh-noise-1",
+      "Image Description": "The Haters, 1999, Live"
+    },
+    {
+      "Type of Noise": "Cut Up",
+      "Description": "Cut Up is characterized by the quickness of how sounds come in and out of the mix. The genre takes inspiration from musique concrete, a faction of experimental music that originated in the 1940s and focused on found-sound collage created through the splicing of tape. Prominent artists of Cut Up include Sickness, developer, Facialmess, Kazuma Kubota, and K2.",
+      "Image": "cut-up-1",
+      "Image Description": "Facialmess, THE COMPLETE SLAUGHTERHOUSE SESSIONS, 2015, Album cover"
+    },
+    {
+      "Type of Noise": "Death Industrial",
+      "Description": "\rDeath Industrial shares many similarities with Power Electronics, although focuses more on the use of synthesizers rather than vocals. Prominent artists include Brighter Death Now, and Control.",
+      "Image": "death-industrial-1",
+      "Image Description": "Brighter Death Now, United States Now, 2018, Album cover"
+    },
+    {
+      "Type of Noise": "Drone",
+      "Description": "\rDrone is characterized by the use of unchanging drones and melodic synths. The genre shares many similarities with Harsh Noise Wall but uses subtle to no changes in slow melodies and atmospheric dynamics. Prominent artists of Drone include Brian Eno, Lamonte Young, Kevin Drumm, Lea Bertucci, and Tim Hecker.",
+      "Image": "drone-1",
+      "Image Description": "\rDrone is characterized by the use of unchanging drones and melodic synths. The genre shares many similarities with Harsh Noise Wall but uses subtle to no changes in slow melodies and atmospheric dynamics. Prominent artists of Drone include Brian Eno, Lamonte Young, Kevin Drumm, Lea Bertucci, and Tim Hecker."
+    },
+    {
+      "Type of Noise": "Harsh Noise Wall",
+      "Description": "The use of unchanging static and harsh drones characterizes Harsh Noise Wall. The craft of harsh noise walls reveals itself through the minute changes within that static. Subtle shifts slowly morph over time as certain crackles or frequencies enter and dissipate. Prominent artists of Harsh Noise Wall include The Rita and Vomir. Vomir emphasizes the nihilistic approach by handing out plastic bags for audience members to put over their head to block any/all sensory input beyond the wall of noise playing through the PA.",
+      "Image": "harsh-noise-wall-1",
+      "Image Description": "The Rita, Gamzatti, 2015, Album cover"
+    },
+    {
+      "Type of Noise": "Japanoise",
+      "Description": "Japanoise, initially created in Japan in the 1980s and 1990s, offered a common approach to dissonance, overwhelming volume/dynamic shifts, electronics, and extremity. Prominent artists include Merzbow, CCCC, The Incapacitants, K2, Government Alpha, and Killer Bug. One iconic performance included artist Hanatarash’s set, during which they destroyed the venue with a bulldozer while turning on the microphones for sound and feedback.",
+      "Image": "japanoise-1",
+      "Image Description": "Hanatarash, 1985, Bulldozer live set."
+    },
+    {
+      "Type of Noise": "Laptop Noise",
+      "Description": "Laptop Noise uses programming custom noise software with applications such as MaxMSP, PureData, Audiomulch, and Supercollider. Prominent artists include Mecha-Shiva, Dillon Bastan, John Wiese, \nand Andrea Pensado.",
+      "Image": "laptop-noise-1",
+      "Image Description": "Andrea Pensado, 2014, Live performance"
+    },
+    {
+      "Type of Noise": "“Old School” Industrial ",
+      "Description": "\n“Old School” Industrial presents simple rhythmic structures and melodic lines underneath dissonant synths and howled vocals. Prominent artists include Einsturzende Neubauten and Boy Dirt Car.",
+      "Image": "old-school-industrial-1",
+      "Image Description": "Einsturzende Neubauten "
+    },
+    {
+      "Type of Noise": "Modular Based Noise",
+      "Description": "Modular Based Noise uses instrumentation with modular synthesizers. Artists create patches of many times self-generating synths to create noise music. Prominent artists include J. Soliday and SADNOISE.",
+      "Image": "modular-1",
+      "Image Description": "J. Soliday, Plastics, 2020, Album cover"
+    },
+    {
+      "Type of Noise": "Noise Rock",
+      "Description": "\rInfluenced by punk and metal, Noise Rock is characterized by homemade drum sets, broken guitars, and circuit-bent keyboards. Prominent artists include The Coughs and Nozagt.",
+      "Image": "noise-rock-1",
+      "Image Description": "Influenced by punk and metal, Noise Rock is characterized by homemade drum sets, broken guitars, and circuit-bent keyboards. Prominent artists include The Coughs and Nozagt."
+    },
+    {
+      "Type of Noise": "Power Electronics",
+      "Description": "Power Electronics was created around the 1980s and 1990s in the UK with minimal sound, their approach is blunt. Groups include White House, The Grey Wolves, Con-Dom, and Sutcliffe Jugend. Though their aesthetic approach shifted between groups, their fascination with serial killers, genocide, racism, sexual assault, and state violence connected these acts. Power Electronics focuses on power — the artist taking control of power.",
+      "Image": "power-electronics-1",
+      "Image Description": "WHITEHOUSE, WRIGGLE LIKE A FUCKING EEL, 2003, Album cover"
+    },
+    {
+      "Type of Noise": "Tape Based Noise",
+      "Description": "Tape Based Noise is a genre of noise music characterized by instrumentation and artists using tapes to loop, manipulate, or physically interact with the medium. Prominent artists include Aaron Dilloway and Howard Stelzer.",
+      "Image": "tape-based-noise-1",
+      "Image Description": "Aaron Dilloway live at Union Pool, 2020"
+    },
+    {
+      "Type of Noise": "Noise Pollution",
+      "Description": "Noise pollution, stemming from various sources, including industrial activities, transportation, construction sites, and urbanization, poses a significant threat to human health and the environment. The continuous barrage of loud and disruptive noises can lead to various adverse effects, such as hearing loss, sleep disturbances, increased stress levels, and impaired communication. Moreover, wildlife and ecosystems can also suffer from the disruptive impact of noise pollution, leading to disturbances in natural habitats and ecological imbalances. One example of this \r\tR. Murray Schafer’s book The Tuning of the World emphasizes the importance of harmonizing soundscapes to create environments conducive to well-being and ecological balance. Many have said implementing Schafer’s principles can guide efforts to mitigate noise pollution and promote environments where tranquility and harmony prevail, benefiting both human populations and the natural world.",
+      "Image": "noise-pollution-1, noise-pollution-2",
+      "Image Description": "Top: Schafer, R. M. (1977). The Tuning of the World (Book cover)\rBottom: Airplane flying over city, Getty Images"
+    },
+    {
+      "Type of Noise": "Perlin Noise",
+      "Description": "\rPerlin Noise was developed by Ken Perlin in the early 1980s as a response to the visual limitations he encountered in computer graphics while working on the movie Tron (1982). Traditional methods for texture generation at the time resulted in artificial-looking textures that lacked the complexity and natural randomness found in real-world textures. Perlin sought to create a technique to produce more organic and visually appealing surfaces. Perlin Noise is a gradient noise function that generates smooth, natural-looking textures in a way that can be easily computed and replicated across different platforms. This innovation significantly improved the realism of computer-generated imagery (CGI) by mimicking the stochastic properties of natural phenomena, thereby enhancing the visual effects in Tron (1982) and subsequent films and applications in computer graphics.",
+      "Image": "perlin-noise-1, perlin-noise-2",
+      "Image Description": "Top: Tron Directed by Steven Lisberger, 1982. Film still\rBottom: Perlin noise wave-field"
+    },
+    {
+      "Type of Noise": "Physical Noise",
+      "Description": "In communication and signal processing, physical noise pertains to disturbances inherent within the signal transmission system itself. These disturbances can arise from electromagnetic interference, thermal noise, or imperfections in the transmission medium. Physical noise directly affects the signal quality during transmission or reception, introducing errors or distortions that can hinder effective communication.\r\tPhysical noise differs from environmental noise because it originates from within the signal transmission system, while environmental noise originates from external sources in the surrounding environment.\r\tWilliam Basinski’s The Disintegration Loops can act as an example of physical noise due to its reliance on the gradual degradation of analog tape loops, introducing a form of disruption or decay into the sonic composition. The intentional decay of the tape loops within Basinski’s work is a tangible manifestation of physical noise, embodying themes of entropy and transformation through the materiality of sound.",
+      "Image": "physical-noise-1",
+      "Image Description": "Basinski, William. The Disintegration Loops, 2002, Album Cover"
+    },
+    {
+      "Type of Noise": "Physiological Noise",
+      "Description": "Physiological noise are disturbances or interferences in communication that originate from physiological factors within the communicators. These factors can include biological processes such as hunger, fatigue, illness, or sensory impairments, which may affect an individual’s ability to send or receive messages accurately. Physiological noise can manifest as distractions or impediments that hinder effective communication, leading to misunderstandings or misinterpretations of messages. The Noise Control Act of 1972 was enacted to oversee noise pollution in America because long-term exposure to physiological noise can negatively affect the body.",
+      "Image": "physiological-noise-1",
+      "Image Description": "Noise Control Act, 1975, Post card, Library of Congress"
+    },
+    {
+      "Type of Noise": "Pink Noise",
+      "Description": "Pink noise, sometimes referred to as “1/f noise,” is a variant of white noise with a frequency spectrum that decreases in intensity as the frequency increases, resulting in deeper sounds that are more pleasing (or harmonious) to the human ear. It replicates natural sounds, such as the rustle of leaves, steady rain, wind, or heartbeats, making it more conducive to relaxation and sleep. Pink noise has been used in sound engineering, music, and for therapeutic purposes to aid sleep and mask background noise. It’s also used in electronic devices and audio tests to evaluate sound balance in different environments.\r\tThe term “pink noise” is derived from a light analogy; just as pink light is a lower-frequency version of white light, pink noise is a lower-frequency version of white noise. In layman’s terms, pink noise has more energy at lower frequencies. Hence, it’s sometimes called “red noise,” evoking the color red, which is associated with \nlower-frequency light.",
+      "Image": "pink-noise-1",
+      "Image Description": "A two-dimensional pink noise gray scale image, generated with a computer program. "
+    },
+    {
+      "Type of Noise": "Psychological Noise",
+      "Description": "Psychological noise results from preconceived notions brought to conversations, such as stereotypes, reputations, and assumptions. When we come into a conversation with ideas about what the other person will say and why, we can easily become blinded to their original message. Most of the time, it is difficult to distance oneself from psychological noise. Many recommend recognizing that it exists, and considering those distractions when we converse with others \nis essential. \r\tAn example of this is right after a major earthquake, an “oldies” radio station in Los Angeles plays Elvis Presley’s “I’m All Shook Up” as part of a preprogrammed music session and is condemned by listeners for mocking victims of the quake. This example illustrates psychological noise in communication, where the context or emotional state of the audience (affected by the earthquake) influenced how a message (the song) was received. While preprogrammed and coincidental, the choice of song can be perceived as insensitive given the circumstances, highlighting how external events can impact the interpretation \nof communication.\r\tPsychological noise differs from bias in that psychological noise refers to internal distractions that affect how messages are received and interpreted, such as emotions or stress. On the other hand, bias involves a predisposition or preconceived notion that influences the interpretation of messages, often leading to prejudgment. While psychological noise can encompass a wide range of internal states, bias refers explicitly to a skewed perspective towards or against something or someone.",
+      "Image": "psychological-noise-1, psychological-noise-2",
+      "Image Description": "Top: Elvis Presley, Getty Images\rBottom: The stretch of the 10 Freeway that collapsed following the Jan. 17, 1994, Northridge earthquake was repaired in less than three months."
+    },
+    {
+      "Type of Noise": "Semantic Noise",
+      "Description": "Semantic noise refers to interference in communication caused by differences in the interpretation or meaning of words, symbols, or language constructs between communicators. This type of noise arises when there is a misunderstanding or ambiguity in the intended message due to semantic barriers such as language, jargon, technical terms, or cultural differences. The Tower of Babel, where people were unable to communicate with each other due to the confusion of languages, can be seen as a metaphor for semantic noise that creates misunderstandings and hinders effective communication.\r\tIn digital communication, issues such as autocorrect errors, poor voice recognition in virtual assistants, or even font choices that make text hard to read can introduce semantic noise, distorting the \nintended message.",
+      "Image": "semantic-noise-1",
+      "Image Description": "The Tower of Babel acts as a symbol of translation"
+    },
+    {
+      "Type of Noise": "Simplex Noise",
+      "Description": "Simplex noise is an algorithm developed by Ken Perlin as an alternative to his classic Perlin noise. Computer graphics use it to create more natural procedural textures and terrains. Simplex noise is computationally more efficient, particularly in higher dimensions, and it avoids some of the visual artifacts associated with Perlin noise. Its ability to generate coherent noise quickly makes it well-suited for real-time applications in graphics and games, allowing for the simulation of phenomena like water, clouds, and other textures that exhibit randomness with continuity.",
+      "Image": "simplex-1, simplex-2",
+      "Image Description": "Top: Rendered Simplex noise\rBottom: Water caustics created using Simplex noise"
+    },
+    {
+      "Type of Noise": "Visual Noise",
+      "Description": "Visual noise refers to unwanted or distracting elements in a visual scene that interfere with the perception or comprehension of relevant information. It can include cluttered backgrounds, irrelevant graphics, overly complex designs, or inconsistent formatting. Visual noise can impair communication, reduce the effectiveness of visual materials, and make it difficult for viewers to focus on critical messages or details. Dazzle camouflage, a type of ship camouflage using bold, geometric patterns and contrasting colors, can be considered visual noise because it creates a confusing visual signal that disrupts an observer’s ability to perceive a ship’s actual size, shape, and direction.",
+      "Image": "visual-noise-1",
+      "Image Description": "USS West Mahomet in dazzle camouflage, 1918"
+    },
+    {
+      "Type of Noise": "Wavelet Noise",
+      "Description": "Wavelet noise is an alternative to Perlin noise, which reduces the problems of aliasing and detail loss encountered when Perlin noise is summed into a fractal.",
+      "Image": "wavelet-noise-1",
+      "Image Description": "Rendered image of wavelet noise"
+    },
+    {
+      "Type of Noise": "Worley Noise",
+      "Description": "\rWorley noise, also called Voronoi noise and cellular noise, is a noise function introduced by Steven Worley in 1996. Worley noise is an extension of the Voronoi diagram that outputs a real value at a given coordinate that corresponds to the Distance of the nth nearest seed, usually the nearest seed, and the seeds are distributed evenly through the region. Worley noise is used to create procedural textures in computer graphics.",
+      "Image": "worley-noise-1, worley-noise-2",
+      "Image Description": "Top: Example picture generated with Worley noise’s basic algorithm\rBottom: Large rock formation created from Worley noise"
+    },
+    {
+      "Type of Noise": "White Noise",
+      "Description": "White noise encompasses various applications, from sound to complex algorithms. In acoustics, it is a type of noise with equal intensity at different frequencies, giving it a consistent and uniform “shhh” sound, like the static between radio stations or the steady hiss of a radiator. This feature makes it useful for sound masking, aiding sleep, and testing equipment in sound engineering.\r\tIn digital signal processing and algorithms, white noise is used as a random signal to test processes or introduce randomness into functions and simulations. Its algorithmic counterpart can be found in random number generation, dithering in image processing, and various types of statistical sampling. Across these diverse applications, the defining characteristic of white noise is its randomness and uniform distribution across a set domain, whether that is sound frequencies or a range of values in computational algorithms.\r\tThe term can also be used metaphorically, as in Don DeLillo’s novel White Noise (1985), which explores the symptoms of modern culture that make it difficult for individuals to actualize their ideas and personalities.\r\tAccording to The New York Times, white noise machines producing audio can “mask the assorted yapping dogs, clanky radiators, and late-night parties that can leave us anxious, seething, and awake.”",
+      "Image": "white-noise-1, white-noise-2, white-noise-3",
+      "Image Description": "Top: Image of White Noise\rMiddle: Don Delillo, White Noise, Cover, 1985\nBottom: Marpac White Noise Sound Machine, 2024"
+    }
+  ]
+}
