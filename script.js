@@ -13,12 +13,16 @@ function toggleMute() {
     });
 }
 
-var menuOverlay = document.getElementById("menuOverlay");
 function toggleMenu() {
-    if (menuOverlay.style.display === "none") {
-        menuOverlay.style.display = "block";
+    var menuOverlay = document.getElementById("menuOverlay"); // Move this line inside the function
+    if (menuOverlay) { // Check if the element exists
+        if (menuOverlay.style.display === "none") {
+            menuOverlay.style.display = "block";
+        } else {
+            menuOverlay.style.display = "none";
+        }
     } else {
-        menuOverlay.style.display = "none";
+        console.error("menuOverlay element not found");
     }
 }
 

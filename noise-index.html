@@ -46,16 +46,14 @@
         <div class="menu-item"><a href="noise_index.html">NOISE INDEX</a></div>
         <div class="menu-item">
             <a href="#" onclick="toggleSubmenu(event)">INTERVIEWS</a>
-            <span id="arrow" style="display: inline-block; margin-left: -8px;">&lt;</span>
-            <div id="submenu">
+            <span id="arrow" style="display: inline-block; margin-left: -8px">&lt;</span>
+            <div id="submenu" style="display: none">
                 <div><a href="suzanne-ciani.html">SUZANNE CIANI</a></div>
-                <div><a href="mitch-paone.html">KEVIN MCCAUGHEY</a></div>
-                <div><a href="hassan-rahim.html">MITCH PAONE</a></div>
-                <div><a href="laurel-schwulst.html">HASSAN RAHIM</a></div>
-                <div><a href="kevin-mccaughey.html">LAUREL SCHWULST</a></div>
-                <div><a href="interview6.html">LOBSANG YONTEN</a></div>
-
-
+                <div><a href="kevin-mccaughey.html">KEVIN MCCAUGHEY</a></div>
+                <div><a href="mitch-paone.html">MITCH PAONE</a></div>
+                <div><a href="hassan-rahim.html">HASSAN RAHIM</a></div>
+                <div><a href="laurel-schwulst.html">LAUREL SCHWULST</a></div>
+                <div><a href="lobsang-yonten.html">LOBSANG YONTEN</a></div>
             </div>
         </div>
     </div>
@@ -85,7 +83,7 @@
 
 
     <script src="https://player.vimeo.com/api/player.js"></script>
-    
+
 </body>
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -291,5 +289,6 @@
     document.querySelectorAll('.noise-div').forEach(div => noiseObserver.observe(div));
 });
 </script>
+<script src="script.js"></script>
 
 </html>
