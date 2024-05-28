@@ -244,6 +244,14 @@ video {
     /* Add this line */
 
 }
+            /* Your styles here */
+            #menuOverlay {
+                display: none; /* Ensure initial state is set */
+            }
+            #submenu {
+                display: none; /* Ensure initial state is set */
+            }
+           
 
 .menu-left .menu-item {
     font-family: 'ABCROM Heavy', sans-serif;
