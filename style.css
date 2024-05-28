@@ -581,6 +581,9 @@ video {
         display: none;
     }
 
+    .noise-title{
+        font-size: 2em;
+    }
     /* Show mobile menu text */
     #mobileMenu {
         display: block;
