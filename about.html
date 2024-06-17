@@ -1,20 +1,313 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="media/favicon.png" type="image/png"> 
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ABOUT</title>
+    <link rel="icon" href="media/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css" />
     <style>
         body {
-            background-color: #4376BB;
-        
+            background-color: #4376bb;
+            margin: 10px;
+        }
+
+        .interview-headline {
+            color: black;
+        }
+
+        .sticky-label-left {
+            color: black;
+        }
+
+        .sticky-label-right {
+            color: black;
+            margin-right: 20px;
+
+        }
+
+        .interview-speaker {
+            color: black;
+        }
+
+        .image-caption {
+            color: black;
+        }
+
+        .underline-text::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 13px;
+            height: 1.5px;
+            background-color: #000000;
+            width: 100%;
         }
     </style>
 </head>
+
 <body>
-    
-</body>
+    <div id="menuOverlay">
+        <div id="closeButton" onclick="toggleMenu()">X</div>
+        <div class="menu-item"><a href="about.html">ABOUT</a></div>
+        <div class="menu-item"><a href="noise-index.html">NOISE INDEX</a></div>
+        <div class="menu-item">
+            <a href="#" onclick="toggleSubmenu(event)">INTERVIEWS</a>
+            <span id="arrow" style="display: inline-block; margin-left: -8px;">&lt;</span>
+            <div id="submenu">
+                <div><a href="suzanne-ciani.html">SUZANNE CIANI</a></div>
+                <div><a href="kevin-mccaughey.html">KEVIN MCCAUGHEY</a></div>
+                <div><a href="mitch-paone.html">MITCH PAONE</a></div>
+                <div><a href="hassan-rahim.html">HASSAN RAHIM</a></div>
+                <div><a href="laurel-schwulst.html">LAUREL SCHWULST</a></div>
+                <div><a href="lobsang-yonten.html">LOBSANG YONTEN</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="mobileMenu" onclick="toggleMenu()" style="z-index: 99999999;">MENU</div>
+
+
+    <div class="video-background">
+        <iframe src="https://player.vimeo.com/video/943062696?background=1&autoplay=1&loop=1&mute=1" frameborder="0"
+            allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div class="menu-bar">
+        <div class="menu-left">
+            <div class="menu-item"><a href="index.html">VARIATIONS ON NOISE</a></div>
+        </div>
+        <div class="menu-right">
+            <div class="menu-item"><a href="about.html">ABOUT</a></div>
+            <div class="menu-item"><a href="interviews.html">INTERVIEWS</a></div>
+            <div class="menu-item"><a href="noise-index.html">NOISE INDEX</a></div>
+        </div>
+    </div>
+
+    <div class="interview-headline">
+        <div id="name">
+            <div>CLINTON</div>
+            <div>VAN ARNAM</div>
+        </div>
+        <div id="sub-headline">
+            <div>LET’S CONSIDER</div>
+            <div>NOISE</div>
+
+        </div>
+    </div>
+
+
+    <div class="content-after-headline">
+
+        <div class="sticky-flex">
+            <div class="sticky-label-left">INTRODUCTION</div>
+            <div class="sticky-label-right">LET’S CONSIDER NOISE</div>
+        </div>
+        <div class="interview-text">
+            <!-- intro  -->
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>
+                        What is it? The question seems simple — yet it’s tough to define. Is noise sound? For some, the
+                        answer’s obvious — yes, it is. But what about visual noise on an old television screen? Or,
+                        noise in economics? In the book <span class="italic-text">Noise: A Flaw in Human
+                            Judgment</span>, Daniel Kahneman describes noise
+                        as irrelevant or misleading data and information that can cause misinterpretation of economic
+                        indicators, leading to incorrect decisions by investors, analysts, and policymakers. Other noise
+                        examples might include computer programming algorithms, psychological noise, and more.
+                    </div>
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 30%">
+
+                    <img src="media/images/about-noise-book.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div><a href="https://en.wikipedia.org/wiki/Noise:_A_Flaw_in_Human_Judgment" target="_blank">
+                            ‘Noise: A Flaw in Human Judgment,’ by Daniel Kahneman, Olivier Sibony, and Cass R. Sunstein,
+                            Little, Brown Spark, 2021. Cover.</a></div>
+                </div>
+            </div>
+
+
+
+            <div class="interview-speaker">
+
+                <div class="interview-speaker-text-second">
+                    <div>
+                        While a complex and far-reaching inquiry, I decided to tackle it from three perspectives:
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>
+                        <span class="underline-text">INDEX</span>
+                    </div>
+                    <div>
+                        If noise is ubiquitous in our everyday lives, how do we, in fact, define it? As an ongoing
+                        research project and resource, this index is a consolidated tool for anyone interested in noise
+                        and how it shapes science, audio, culture, and other aspects of our lives. It offers a range of
+                        interpretations across media and disciplines, with as many varieties as possible. Here, you’ll
+                        find topics from visual noise in graphic design to noise music, a genre characterized by
+                        musicians questioning dominant power structures, to Brown noise and how it may help people
+                        concentrate or focus.
+                    </div>
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 100%">
+                    <a href="https://www.youtube.com/watch?v=ca3fBRmmrBA" target="_blank" rel="noopener noreferrer">
+                        <img src="media/images/about-brown-noise.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    YouTube channel which offers users “Academic Brown Noise” for studying</a>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>
+                        <span class="underline-text">INTERVIEWS</span>
+                    </div>
+                    <div>
+                        The subject of noise has become a starting point for me to conduct seven interviews with
+                        designers, artists, musicians, and a <a href="./lobsang-yonten.html">Tibetan monk</a>. Each
+                        interview offers unique insight into
+                        personal experiences and ways to approach the world through noise. These interviews taught me
+                        considerably about noise and helped me better
+                        understand humanity.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 100%">
+
+                    <img src="media/images/about-gsl.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Geshe Lobsang Yonten, photograph by Rebecca Wilkinson</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>
+                        <span class="underline-text">PRACTICE</span>
+                    </div>
+                    <div>
+                        But what are my thoughts on this looming subject? Is this a game of semantics? Why am I
+                        attracted to noise? The answer lies in multitudes of forms.
+                    </div>
+                </div>
+            </div>
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>
+                        <span class="italic-text">NOISE AS SOUND</span>
+                    </div>
+                    <div>
+                        From a sonic perspective, noise creates dissonance and fullness in sound, a seeming paradox.
+                        Sonically, ‘white noise’ refers to every frequency the human ear can hear played at the same
+                        amplitude. Then where does the dissonance come from? My thinking lies in the idea that it’s
+                        fundamental to the human condition. From our time in the womb, the human body is surrounded by
+                        noise, and so the world appears to be silent.
+                    </div>
+                    <div>
+                        An example is the “shhh” sound, akin to white noise, which soothes babies by mimicking the
+                        comforting, constant sounds of the womb familiar from their prenatal environment. Scientists
+                        support its use as part of calming techniques, emphasizing its effectiveness in mirroring the
+                        continuous background noise experienced before birth. Culture, music, and language create
+                        patterns in our minds; disruptions to those patterns are called noise simply because we are not
+                        used to it. But strangely, we need it. The world of sound can be exceptionally sterile without
+                        noise, and noise can act as both a catalyst for dissonance and change in music. I am interested
+                        in the experimental nature of noise and the surrounding communities. Over the last two years,
+                        I’ve been organizing noise shows and bringing people together to experiment with sound and
+                        noise. The events, titled Rave by Design, allowed me to try different experimental approaches
+                        to sounds and create posters for the show and live visuals for the performances. </div>
+                </div>
+            </div>
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 50%">
+
+                    <img src="media/images/about-rbd.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Rave by Design flyer by Clinton Van Arnam, 2023</div>
+                </div>
+            </div>
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>
+                        Another way I introduce noise in my musical practice is by ambiance. Ambient noise and Drone
+                        music might also seem like a paradox: How can ambiance be noise? Consider informational noise.
+                        From click-bait journalism to the shortening attention span of the public, we live in a world of
+                        information overflow. When an audience member hears a sound whose evolution is to change over an
+                        hour rather than a second, many uncomfortable feelings might arrive. Slowness can bring out the
+                        noise of the mind and, perhaps with recognition we can improve it. With the help of friends, I
+                        organized a live event at the RISD Museum titled Ambience as Noise, where artists came
+                        together and performed drone music for two hours—the event created an interruption into a
+                        hyper-stimulated media landscape through slowness.
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="interview-speaker-image">
+                <div class="image-container-interview" style="width: 80%">
+
+                    <img src="media/images/about-ambience-risd.png" alt="Image description" />
+                </div>
+                <div class="image-caption">
+                    <div>↑</div>
+                    <div>Ambience as Noise at the RISD Museum, 2023</div>
+                </div>
+            </div>
+
+
+            <div class="interview-speaker">
+                <div class="interview-speaker-text-second">
+                    <div>
+                        <span class="italic-text">TECHNOLOGY AS INSTRUMENT</span>
+                    </div>
+                    <div>
+                        I approach design as a musician, where technology becomes an instrument for generating ideas. My
+                        interest in typography has led me to create custom software that interacts with language
+                        similarly to how I might interact with a synthesizer. Programming languages and writing custom
+                        software allow me to expand on this practice because I can create custom tools to tell a
+                        particular story and create a larger narrative. An example is a video piece I made with the same
+                        title of this book, Variations on Noise.06 The video is an essay exploring the notion of noise
+                        and its relationship to the human body. I wrote custom software for this project, which tracks
+                        the motion of the human body, outputs the data to live synthesizers, and generates new
+                        typographic forms. Using typography and graphic form the same way a musician would use their
+                        instrument, I was able to comment on more extensive texts and connect philosophical ideas of
+                        noise, such as Micah Silver’s <span class="italic-text">Figures of Air</span>, Damon Kruoski’s <span class="italic-text">Ways of Hearing</span>, and Jacques
+                        Attali’s book <span class="italic-text">Noise: The Political Economy of Music</span>.
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- bottom spacer -->
+        <div style="height: 150px"></div>
+
+
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+
 </html>
